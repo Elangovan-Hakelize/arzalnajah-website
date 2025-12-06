@@ -1,0 +1,166 @@
+
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X, ChevronDown, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+
+  const services = [
+    { name: "Mainland Company Setup", href: "/services/mainland-company-setup" },
+    { name: "Freezone Business Setup", href: "/services/freezone-business-setup" },
+    { name: "Offshore Company Formation", href: "/services/offshore-company-formation" },
+    { name: "Visa Services", href: "/services/visa-services" },
+    { name: "PRO Services", href: "/services/pro-services" },
+    { name: "Corporate Bank Account", href: "/services/corporate-bank-account" },
+    { name: "Trade License Services", href: "/services/trade-license-services" },
+    { name: "Golden Visa Assistance", href: "/services/golden-visa-assistance" },
+  ];
+
+  return (
+    <header className="sticky top-0 z-50 bg-white shadow-md">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between py-4">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-2">
+            <div className="text-2xl font-bold text-[#0A1A4A]">
+              <span className="text-[#D4A017]">ARZ</span> Al Najah
+            </div>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            <Link href="/" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium transition-colors">
+              Home
+            </Link>
+            <Link href="/about" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium transition-colors">
+              About
+            </Link>
+            
+            {/* Services Dropdown */}
+            <div className="relative group">
+              <button className="flex items-center space-x-1 text-[#0A1A4A] hover:text-[#D4A017] font-medium transition-colors">
+                <span>Services</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  {services.map((service) => (
+                    <Link
+                      key={service.href}
+                      href={service.href}
+                      className="block px-4 py-2 text-sm text-[#0A1A4A] hover:bg-[#F8F9FA] hover:text-[#D4A017] transition-colors"
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <Link href="/packages" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium transition-colors">
+              Packages
+            </Link>
+            <Link href="/blog" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium transition-colors">
+              Blog
+            </Link>
+            <Link href="/testimonials" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium transition-colors">
+              Testimonials
+            </Link>
+            <Link href="/contact" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium transition-colors">
+              Contact
+            </Link>
+          </nav>
+
+          {/* Contact CTA */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <a href="tel:+971523149927" className="flex items-center space-x-2 text-[#0A1A4A] hover:text-[#D4A017] transition-colors">
+              <Phone className="w-4 h-4" />
+              <span className="font-semibold">+971 52 314 9927</span>
+            </a>
+            <Link href="/contact">
+              <Button className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
+                Free Consultation
+              </Button>
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden text-[#0A1A4A]"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden border-t border-gray-200 py-4">
+            <nav className="flex flex-col space-y-4">
+              <Link href="/" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium" onClick={() => setMobileMenuOpen(false)}>
+                Home
+              </Link>
+              <Link href="/about" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium" onClick={() => setMobileMenuOpen(false)}>
+                About
+              </Link>
+              
+              {/* Mobile Services Dropdown */}
+              <div>
+                <button
+                  onClick={() => setServicesOpen(!servicesOpen)}
+                  className="flex items-center space-x-1 text-[#0A1A4A] hover:text-[#D4A017] font-medium w-full"
+                >
+                  <span>Services</span>
+                  <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {servicesOpen && (
+                  <div className="ml-4 mt-2 space-y-2">
+                    {services.map((service) => (
+                      <Link
+                        key={service.href}
+                        href={service.href}
+                        className="block text-sm text-[#0A1A4A] hover:text-[#D4A017]"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <Link href="/packages" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium" onClick={() => setMobileMenuOpen(false)}>
+                Packages
+              </Link>
+              <Link href="/blog" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium" onClick={() => setMobileMenuOpen(false)}>
+                Blog
+              </Link>
+              <Link href="/testimonials" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium" onClick={() => setMobileMenuOpen(false)}>
+                Testimonials
+              </Link>
+              <Link href="/contact" className="text-[#0A1A4A] hover:text-[#D4A017] font-medium" onClick={() => setMobileMenuOpen(false)}>
+                Contact
+              </Link>
+              
+              <a href="tel:+971523149927" className="flex items-center space-x-2 text-[#0A1A4A] pt-4 border-t">
+                <Phone className="w-4 h-4" />
+                <span className="font-semibold">+971 52 314 9927</span>
+              </a>
+              
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                <Button className="w-full bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
+                  Free Consultation
+                </Button>
+              </Link>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+}
