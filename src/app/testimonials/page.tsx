@@ -5,13 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 import { useEnquiryPopup } from "@/components/EnquiryPopup";
 import { Button } from "@/components/ui/button";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Client Testimonials | Success Stories - ARZ Al Najah",
-  description: "Read what our clients say about ARZ Al Najah business setup services. Real success stories from entrepreneurs and businesses in Dubai & UAE.",
-  keywords: "ARZ Al Najah reviews, Dubai business setup testimonials, client success stories UAE, business consultancy reviews",
-};
 
 export default function Testimonials() {
   const { openPopup } = useEnquiryPopup();
