@@ -63,11 +63,11 @@ const EnquiryPopupContent = ({
     const hasShownPopup = sessionStorage.getItem("enquiryPopupShown");
     
     if (!hasShownPopup) {
-      // Show popup after 8 seconds
+      // Show popup after 5 seconds
       const timer = setTimeout(() => {
         setIsOpen(true);
         sessionStorage.setItem("enquiryPopupShown", "true");
-      }, 8000);
+      }, 5000);
 
       return () => clearTimeout(timer);
     }
