@@ -14,13 +14,6 @@ import {
   Clock,
   TrendingUp
 } from "lucide-react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "About ARZ Al Najah | Leading Business Setup Consultancy in Dubai",
-  description: "Learn about ARZ Al Najah Business Setup Services - your trusted partner for company formation in Dubai & UAE since 2010. Expert team, 500+ successful setups.",
-  keywords: "about ARZ Al Najah, Dubai business consultancy, UAE company formation experts, business setup company Dubai",
-};
 
 export default function About() {
   const { openPopup } = useEnquiryPopup();

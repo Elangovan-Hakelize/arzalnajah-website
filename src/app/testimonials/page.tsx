@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import { useEnquiryPopup } from "@/components/EnquiryPopup";
+import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default function Testimonials() {
+  const { openPopup } = useEnquiryPopup();
+
   const testimonials = [
     {
       name: "Ahmed Al Mansouri",
@@ -210,11 +216,13 @@ export default function Testimonials() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Start your business setup journey with ARZ Al Najah today
           </p>
-          <Link href="/contact">
-            <button className="bg-white text-[#D4A017] hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-              Get Free Consultation
-            </button>
-          </Link>
+          <Button 
+            size="lg"
+            onClick={openPopup}
+            className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold"
+          >
+            Get Free Consultation
+          </Button>
         </div>
       </section>
     </main>
