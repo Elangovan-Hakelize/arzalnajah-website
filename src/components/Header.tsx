@@ -1,14 +1,15 @@
-
 "use client";
 
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEnquiryPopup } from "@/components/EnquiryPopup";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const { openPopup } = useEnquiryPopup();
 
   const services = [
     { name: "Mainland Company Setup", href: "/services/mainland-company-setup" },
@@ -82,11 +83,12 @@ export default function Header() {
               <Phone className="w-4 h-4" />
               <span className="font-semibold">+971 52 314 9927</span>
             </a>
-            <Link href="/contact">
-              <Button className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
-                Free Consultation
-              </Button>
-            </Link>
+            <Button 
+              onClick={openPopup}
+              className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold"
+            >
+              Free Consultation
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -152,11 +154,15 @@ export default function Header() {
                 <span className="font-semibold">+971 52 314 9927</span>
               </a>
               
-              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
-                  Free Consultation
-                </Button>
-              </Link>
+              <Button 
+                onClick={() => {
+                  openPopup();
+                  setMobileMenuOpen(false);
+                }}
+                className="w-full bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold"
+              >
+                Free Consultation
+              </Button>
             </nav>
           </div>
         )}
