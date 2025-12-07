@@ -141,7 +141,7 @@ const EnquiryPopupContent = ({
             🎯 Start Your Dubai Business Today!
           </DialogTitle>
           <DialogDescription className="text-gray-600">
-            Get a <span className="font-semibold text-[#D4A017]">FREE consultation</span> with our business setup experts. Fill in your details below.
+            Get a <span className="font-semibold text-[#E56020]">FREE consultation</span> with our business setup experts. Fill in your details below.
           </DialogDescription>
         </DialogHeader>
 
@@ -217,7 +217,7 @@ const EnquiryPopupContent = ({
                 required
                 value={formData.service}
                 onChange={(e) => handleChange(e as any)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#D4A017]"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#E56020]"
               >
                 <option value="">Select a service</option>
                 {services.map((service, index) => (
@@ -246,7 +246,7 @@ const EnquiryPopupContent = ({
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold py-6 text-lg"
+              className="w-full bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold py-6 text-lg"
             >
               {isSubmitting ? (
                 <>
