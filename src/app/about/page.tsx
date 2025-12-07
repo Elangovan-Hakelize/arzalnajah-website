@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useEnquiryPopup } from "@/components/EnquiryPopup";
 import { 
   Target, 
   Eye, 
@@ -20,6 +23,8 @@ export const metadata: Metadata = {
 };
 
 export default function About() {
+  const { openPopup } = useEnquiryPopup();
+
   const values = [
     {
       icon: Shield,
@@ -259,11 +264,13 @@ export default function About() {
             Partner with ARZ Al Najah and experience hassle-free business setup in Dubai
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button size="lg" className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold">
-                Schedule Free Consultation
-              </Button>
-            </Link>
+            <Button 
+              size="lg" 
+              onClick={openPopup}
+              className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold"
+            >
+              Schedule Free Consultation
+            </Button>
             <Link href="/services/mainland-company-setup">
               <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#D4A017]">
                 Explore Our Services
