@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useEnquiryPopup } from "@/components/EnquiryPopup";
 import { 
   Building2, 
   CheckCircle2, 
@@ -20,6 +23,8 @@ export const metadata: Metadata = {
 };
 
 export default function MainlandCompanySetup() {
+  const { openPopup } = useEnquiryPopup();
+
   const benefits = [
     "100% Foreign Ownership",
     "Trade Anywhere in UAE",
@@ -181,11 +186,13 @@ export default function MainlandCompanySetup() {
                 Establish your business in Dubai mainland with 100% foreign ownership. Trade anywhere in the UAE with complete freedom and flexibility.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact">
-                  <Button size="lg" className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
-                    Get Free Consultation
-                  </Button>
-                </Link>
+                <Button 
+                  size="lg" 
+                  onClick={openPopup}
+                  className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold"
+                >
+                  Get Free Consultation
+                </Button>
                 <Link href="/packages">
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#0A1A4A]">
                     View Packages
@@ -331,11 +338,13 @@ export default function MainlandCompanySetup() {
               Get expert guidance and fast processing for your Dubai mainland business setup
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg" className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold">
-                  Schedule Consultation
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                onClick={openPopup}
+                className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold"
+              >
+                Schedule Consultation
+              </Button>
               <a href="https://wa.me/971523149927" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#D4A017]">
                   WhatsApp Us
