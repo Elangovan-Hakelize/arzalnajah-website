@@ -14,13 +14,6 @@ import {
   Globe,
   ArrowRight
 } from "lucide-react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Mainland Company Setup in Dubai | 100% Ownership - ARZ Al Najah",
-  description: "Start your mainland company in Dubai with 100% foreign ownership. Trade anywhere in UAE. Expert guidance on DED license, office space & visa processing. From AED 15,000.",
-  keywords: "mainland company setup Dubai, DED license Dubai, Dubai mainland business, 100% foreign ownership UAE, mainland license cost Dubai",
-};
 
 export default function MainlandCompanySetup() {
   const { openPopup } = useEnquiryPopup();
