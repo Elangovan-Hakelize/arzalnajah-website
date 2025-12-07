@@ -11,11 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contact',
     '/testimonials',
     '/blog',
+    '/privacy-policy',
+    '/terms-conditions',
   ].map(route => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
-    priority: route === '' ? 1.0 : 0.8,
+    priority: route === '' ? 1.0 : route === '/privacy-policy' || route === '/terms-conditions' ? 0.3 : 0.8,
   }))
 
   // Service pages
