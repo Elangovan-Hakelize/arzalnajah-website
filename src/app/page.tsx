@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { EnquiryPopup } from "@/components/EnquiryPopup";
+import { useEnquiryPopup } from "@/components/EnquiryPopup";
 import { 
   Building2, 
   Globe, 
@@ -22,7 +21,7 @@ import {
 } from "lucide-react";
 
 export default function Home() {
-  const [popupOpen, setPopupOpen] = useState(false);
+  const { openPopup } = useEnquiryPopup();
 
   const services = [
     {
@@ -161,9 +160,6 @@ export default function Home() {
         }}
       />
 
-      {/* Enquiry Popup */}
-      <EnquiryPopup externalOpen={popupOpen} onExternalOpenChange={setPopupOpen} />
-
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-[#0A1A4A] via-[#0D2158] to-[#0A1A4A] text-white py-20 lg:py-32 overflow-hidden">
@@ -203,7 +199,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
                     size="lg" 
-                    onClick={() => setPopupOpen(true)}
+                    onClick={openPopup}
                     className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold text-lg px-8 py-6"
                   >
                     Get Free Consultation
@@ -396,7 +392,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                onClick={() => setPopupOpen(true)}
+                onClick={openPopup}
                 className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold text-lg px-8 py-6"
               >
                 Schedule Free Consultation
