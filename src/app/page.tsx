@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { EnquiryPopup } from "@/components/EnquiryPopup";
@@ -18,21 +21,9 @@ import {
   Star
 } from "lucide-react";
 
-export const metadata = {
-  title: "Dubai Business Setup Services | UAE Company Formation - ARZ Al Najah",
-  description: "Start your business in Dubai with ARZ Al Najah. Expert mainland, freezone & offshore company formation. Trade license, visa services & PRO assistance. Free consultation available.",
-  keywords: "Dubai business setup, UAE company formation, mainland business setup Dubai, freezone license UAE, offshore company UAE, visa services Dubai, PRO services Dubai, trade license Dubai",
-  openGraph: {
-    title: "Dubai Business Setup Services | UAE Company Formation",
-    description: "Professional business setup and company formation services in Dubai & UAE",
-    url: "https://arzalnajah.com",
-    siteName: "ARZ Al Najah Business Setup Services",
-    locale: "en_AE",
-    type: "website",
-  },
-};
-
 export default function Home() {
+  const [popupOpen, setPopupOpen] = useState(false);
+
   const services = [
     {
       icon: Building2,
@@ -171,7 +162,7 @@ export default function Home() {
       />
 
       {/* Enquiry Popup */}
-      <EnquiryPopup />
+      <EnquiryPopup externalOpen={popupOpen} onExternalOpenChange={setPopupOpen} />
 
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -210,11 +201,13 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact">
-                    <Button size="lg" className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold text-lg px-8 py-6">
-                      Get Free Consultation
-                    </Button>
-                  </Link>
+                  <Button 
+                    size="lg" 
+                    onClick={() => setPopupOpen(true)}
+                    className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold text-lg px-8 py-6"
+                  >
+                    Get Free Consultation
+                  </Button>
                   <Link href="/packages">
                     <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#0A1A4A] font-semibold text-lg px-8 py-6">
                       View Packages
@@ -401,11 +394,13 @@ export default function Home() {
               Get a free consultation with our business setup experts. We'll guide you through every step of the process.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg" className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold text-lg px-8 py-6">
-                  Schedule Free Consultation
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                onClick={() => setPopupOpen(true)}
+                className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold text-lg px-8 py-6"
+              >
+                Schedule Free Consultation
+              </Button>
               <a href="tel:+971523149927">
                 <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#D4A017] font-semibold text-lg px-8 py-6">
                   Call +971 52 314 9927
