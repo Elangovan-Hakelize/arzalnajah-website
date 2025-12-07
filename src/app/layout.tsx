@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
+import { EnquiryPopupProvider } from "@/components/EnquiryPopup";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://arzalnajah.com'),
@@ -84,11 +85,13 @@ export default function RootLayout({
           data-debug="true"
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
-        <Header />
-        {children}
-        <Footer />
-        <WhatsAppButton />
-        <BackToTop />
+        <EnquiryPopupProvider>
+          <Header />
+          {children}
+          <Footer />
+          <WhatsAppButton />
+          <BackToTop />
+        </EnquiryPopupProvider>
         <VisualEditsMessenger />
       </body>
     </html>
