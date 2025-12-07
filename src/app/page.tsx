@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { EnquiryPopup } from "@/components/EnquiryPopup";
 import { 
   Building2, 
   Globe, 
@@ -168,6 +169,9 @@ export default function Home() {
           })
         }}
       />
+
+      {/* Enquiry Popup */}
+      <EnquiryPopup />
 
       <main className="min-h-screen">
         {/* Hero Section */}
