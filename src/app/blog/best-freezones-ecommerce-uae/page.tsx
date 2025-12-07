@@ -103,9 +103,9 @@ export default function BestFreezonesEcommerceUAE() {
       <section className="bg-gray-50 py-8 border-b">
         <div className="container mx-auto px-4">
           <div className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#D4A017]">Home</Link>
+            <Link href="/" className="hover:text-[#E56020]">Home</Link>
             <span>/</span>
-            <Link href="/blog" className="hover:text-[#D4A017]">Blog</Link>
+            <Link href="/blog" className="hover:text-[#E56020]">Blog</Link>
             <span>/</span>
             <span className="text-[#0A1A4A]">Best Freezones for E-Commerce UAE</span>
           </div>
@@ -116,13 +116,13 @@ export default function BestFreezonesEcommerceUAE() {
       <article className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Link href="/blog" className="inline-flex items-center text-[#D4A017] hover:underline mb-6">
+            <Link href="/blog" className="inline-flex items-center text-[#E56020] hover:underline mb-6">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Blog
             </Link>
 
             <div className="mb-8">
-              <span className="bg-[#D4A017] text-white px-4 py-1 rounded-full text-sm font-semibold">
+              <span className="bg-[#E56020] text-white px-4 py-1 rounded-full text-sm font-semibold">
                 Freezone
               </span>
             </div>
@@ -162,23 +162,23 @@ export default function BestFreezonesEcommerceUAE() {
               </p>
               <ul className="space-y-2 mb-8">
                 <li className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <span className="text-gray-700"><strong>100% Foreign Ownership:</strong> No local partner required</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <span className="text-gray-700"><strong>0% Corporate Tax:</strong> Maximum profit retention</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <span className="text-gray-700"><strong>Lower Setup Costs:</strong> More affordable than mainland</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <span className="text-gray-700"><strong>Fast Registration:</strong> Launch in 3-5 days</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <span className="text-gray-700"><strong>Flexible Office Options:</strong> From flexi-desk to private offices</span>
                 </li>
               </ul>
@@ -189,20 +189,20 @@ export default function BestFreezonesEcommerceUAE() {
 
               <div className="space-y-6 mb-8">
                 {freezones.map((zone, index) => (
-                  <Card key={index} className="border-2 border-gray-200 hover:border-[#D4A017] transition-colors">
+                  <Card key={index} className="border-2 border-gray-200 hover:border-[#E56020] transition-colors">
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-4">
                         <div>
                           <h3 className="text-2xl font-bold text-[#0A1A4A] mb-2">{zone.name}</h3>
                           <div className="flex items-center space-x-2 mb-2">
                             {[...Array(zone.rating)].map((_, i) => (
-                              <Star key={i} className="w-5 h-5 text-[#D4A017] fill-current" />
+                              <Star key={i} className="w-5 h-5 text-[#E56020] fill-current" />
                             ))}
                           </div>
                           <p className="text-sm text-gray-600">Ideal for: {zone.ideal}</p>
                         </div>
                         <div className="text-right">
-                          <div className="text-[#D4A017] font-bold text-lg">{zone.cost}</div>
+                          <div className="text-[#E56020] font-bold text-lg">{zone.cost}</div>
                         </div>
                       </div>
                       
@@ -211,7 +211,7 @@ export default function BestFreezonesEcommerceUAE() {
                         <ul className="grid md:grid-cols-2 gap-2">
                           {zone.benefits.map((benefit, idx) => (
                             <li key={idx} className="flex items-start space-x-2">
-                              <CheckCircle2 className="w-4 h-4 text-[#D4A017] flex-shrink-0 mt-1" />
+                              <CheckCircle2 className="w-4 h-4 text-[#E56020] flex-shrink-0 mt-1" />
                               <span className="text-sm text-gray-700">{benefit}</span>
                             </li>
                           ))}
@@ -246,7 +246,7 @@ export default function BestFreezonesEcommerceUAE() {
               <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
                 Quick Comparison
               </h2>
-              <Card className="border-2 border-[#D4A017] mb-8">
+              <Card className="border-2 border-[#E56020] mb-8">
                 <CardContent className="p-6">
                   <div className="space-y-4">
                     {comparisonFactors.map((item, index) => (
@@ -375,7 +375,7 @@ export default function BestFreezonesEcommerceUAE() {
             </div>
 
             {/* CTA Card */}
-            <Card className="border-2 border-[#D4A017] mt-12">
+            <Card className="border-2 border-[#E56020] mt-12">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">
                   Start Your E-Commerce Business in UAE
@@ -384,7 +384,7 @@ export default function BestFreezonesEcommerceUAE() {
                   Get expert guidance on choosing the right free zone for your online business
                 </p>
                 <Link href="/contact">
-                  <Button size="lg" className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
+                  <Button size="lg" className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold">
                     Schedule Free Consultation
                   </Button>
                 </Link>

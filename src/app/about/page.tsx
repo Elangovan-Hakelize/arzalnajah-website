@@ -65,7 +65,7 @@ export default function About() {
       <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
-            <div className="flex items-center space-x-2 text-[#D4A017] mb-4">
+            <div className="flex items-center space-x-2 text-[#E56020] mb-4">
               <Link href="/" className="hover:underline">Home</Link>
               <span>/</span>
               <span>About Us</span>
@@ -86,7 +86,7 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#D4A017] mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-[#E56020] mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
@@ -122,10 +122,10 @@ export default function About() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <Card className="border-2 border-[#D4A017]">
+            <Card className="border-2 border-[#E56020]">
               <CardContent className="p-8">
-                <div className="bg-[#D4A017] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <Target className="w-8 h-8 text-[#D4A017]" />
+                <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <Target className="w-8 h-8 text-[#E56020]" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">Our Mission</h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -134,10 +134,10 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-[#D4A017]">
+            <Card className="border-2 border-[#E56020]">
               <CardContent className="p-8">
-                <div className="bg-[#D4A017] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <Eye className="w-8 h-8 text-[#D4A017]" />
+                <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <Eye className="w-8 h-8 text-[#E56020]" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">Our Vision</h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -157,10 +157,10 @@ export default function About() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {values.map((value, index) => (
-              <Card key={index} className="border-2 border-gray-200 hover:border-[#D4A017] hover:shadow-lg transition-all">
+              <Card key={index} className="border-2 border-gray-200 hover:border-[#E56020] hover:shadow-lg transition-all">
                 <CardContent className="p-6 text-center">
-                  <div className="bg-[#D4A017] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <value.icon className="w-8 h-8 text-[#D4A017]" />
+                  <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <value.icon className="w-8 h-8 text-[#E56020]" />
                   </div>
                   <h3 className="text-xl font-bold text-[#0A1A4A] mb-3">
                     {value.title}
@@ -183,7 +183,7 @@ export default function About() {
             {whyChooseUs.map((reason, index) => (
               <Card key={index} className="border-gray-200">
                 <CardContent className="p-4 flex items-center space-x-4">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
                   <span className="text-gray-700 font-medium">{reason}</span>
                 </CardContent>
               </Card>
@@ -204,22 +204,22 @@ export default function About() {
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="bg-[#D4A017] bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-10 h-10 text-[#D4A017]" />
+                <div className="bg-[#E56020] bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-10 h-10 text-[#E56020]" />
                 </div>
                 <h4 className="font-bold text-[#0A1A4A] mb-2">Business Consultants</h4>
                 <p className="text-gray-600 text-sm">Expert guidance on business structure and licensing</p>
               </div>
               <div className="text-center">
-                <div className="bg-[#D4A017] bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-10 h-10 text-[#D4A017]" />
+                <div className="bg-[#E56020] bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-10 h-10 text-[#E56020]" />
                 </div>
                 <h4 className="font-bold text-[#0A1A4A] mb-2">Legal Advisors</h4>
                 <p className="text-gray-600 text-sm">Ensuring full compliance with UAE regulations</p>
               </div>
               <div className="text-center">
-                <div className="bg-[#D4A017] bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="w-10 h-10 text-[#D4A017]" />
+                <div className="bg-[#E56020] bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="w-10 h-10 text-[#E56020]" />
                 </div>
                 <h4 className="font-bold text-[#0A1A4A] mb-2">PRO Specialists</h4>
                 <p className="text-gray-600 text-sm">Handling all government documentation efficiently</p>
@@ -233,7 +233,7 @@ export default function About() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <Award className="w-16 h-16 text-[#D4A017] mx-auto mb-6" />
+            <Award className="w-16 h-16 text-[#E56020] mx-auto mb-6" />
             <h2 className="text-3xl font-bold text-[#0A1A4A] mb-6">
               Licensed & Authorized
             </h2>
@@ -248,7 +248,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-[#D4A017] to-[#B8900F] text-white">
+      <section className="py-16 bg-gradient-to-br from-[#E56020] to-[#C4501A] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Business Journey?
@@ -260,12 +260,12 @@ export default function About() {
             <Button 
               size="lg" 
               onClick={openPopup}
-              className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold"
+              className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold"
             >
               Schedule Free Consultation
             </Button>
             <Link href="/services/mainland-company-setup">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#D4A017]">
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#E56020]">
                 Explore Our Services
               </Button>
             </Link>

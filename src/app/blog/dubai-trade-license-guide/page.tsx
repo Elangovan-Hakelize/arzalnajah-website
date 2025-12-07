@@ -71,9 +71,9 @@ export default function DubaiTradeLicenseGuide() {
       <section className="bg-gray-50 py-8 border-b">
         <div className="container mx-auto px-4">
           <div className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#D4A017]">Home</Link>
+            <Link href="/" className="hover:text-[#E56020]">Home</Link>
             <span>/</span>
-            <Link href="/blog" className="hover:text-[#D4A017]">Blog</Link>
+            <Link href="/blog" className="hover:text-[#E56020]">Blog</Link>
             <span>/</span>
             <span className="text-[#0A1A4A]">Dubai Trade License Guide</span>
           </div>
@@ -84,13 +84,13 @@ export default function DubaiTradeLicenseGuide() {
       <article className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Link href="/blog" className="inline-flex items-center text-[#D4A017] hover:underline mb-6">
+            <Link href="/blog" className="inline-flex items-center text-[#E56020] hover:underline mb-6">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Blog
             </Link>
 
             <div className="mb-8">
-              <span className="bg-[#D4A017] text-white px-4 py-1 rounded-full text-sm font-semibold">
+              <span className="bg-[#E56020] text-white px-4 py-1 rounded-full text-sm font-semibold">
                 Licensing
               </span>
             </div>
@@ -142,7 +142,7 @@ export default function DubaiTradeLicenseGuide() {
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-4">
                         <h3 className="text-2xl font-bold text-[#0A1A4A]">{license.type}</h3>
-                        <span className="text-[#D4A017] font-bold">{license.cost}</span>
+                        <span className="text-[#E56020] font-bold">{license.cost}</span>
                       </div>
                       <p className="text-gray-600 mb-4">{license.description}</p>
                       <div className="bg-gray-50 p-4 rounded-lg">
@@ -150,7 +150,7 @@ export default function DubaiTradeLicenseGuide() {
                         <ul className="grid md:grid-cols-2 gap-2">
                           {license.activities.map((activity, idx) => (
                             <li key={idx} className="flex items-center space-x-2">
-                              <CheckCircle2 className="w-4 h-4 text-[#D4A017]" />
+                              <CheckCircle2 className="w-4 h-4 text-[#E56020]" />
                               <span className="text-sm text-gray-700">{activity}</span>
                             </li>
                           ))}
@@ -168,7 +168,7 @@ export default function DubaiTradeLicenseGuide() {
                 {process.map((item, index) => (
                   <div key={index} className="flex gap-6">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-[#D4A017] text-white rounded-full flex items-center justify-center font-bold text-lg">
+                      <div className="w-12 h-12 bg-[#E56020] text-white rounded-full flex items-center justify-center font-bold text-lg">
                         {item.step}
                       </div>
                     </div>
@@ -183,39 +183,39 @@ export default function DubaiTradeLicenseGuide() {
               <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
                 Required Documents
               </h2>
-              <Card className="border-2 border-[#D4A017] mb-8">
+              <Card className="border-2 border-[#E56020] mb-8">
                 <CardContent className="p-6">
                   <ul className="space-y-3">
                     <li className="flex items-start space-x-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-1" />
+                      <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-1" />
                       <span className="text-gray-700">Passport copies of all shareholders/partners</span>
                     </li>
                     <li className="flex items-start space-x-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-1" />
+                      <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-1" />
                       <span className="text-gray-700">Visa copies (if already in UAE)</span>
                     </li>
                     <li className="flex items-start space-x-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-1" />
+                      <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-1" />
                       <span className="text-gray-700">Recent passport-sized photographs</span>
                     </li>
                     <li className="flex items-start space-x-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-1" />
+                      <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-1" />
                       <span className="text-gray-700">Business plan outlining activities</span>
                     </li>
                     <li className="flex items-start space-x-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-1" />
+                      <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-1" />
                       <span className="text-gray-700">Tenancy contract (Ejari registered)</span>
                     </li>
                     <li className="flex items-start space-x-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-1" />
+                      <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-1" />
                       <span className="text-gray-700">No Objection Certificate (if employed)</span>
                     </li>
                     <li className="flex items-start space-x-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-1" />
+                      <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-1" />
                       <span className="text-gray-700">External approvals (industry-specific)</span>
                     </li>
                     <li className="flex items-start space-x-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-1" />
+                      <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-1" />
                       <span className="text-gray-700">Memorandum of Association (MOA)</span>
                     </li>
                   </ul>
@@ -309,7 +309,7 @@ export default function DubaiTradeLicenseGuide() {
             </div>
 
             {/* CTA Card */}
-            <Card className="border-2 border-[#D4A017] mt-12">
+            <Card className="border-2 border-[#E56020] mt-12">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">
                   Ready to Get Your Dubai Trade License?
@@ -318,7 +318,7 @@ export default function DubaiTradeLicenseGuide() {
                   Let us handle your trade license application and setup process
                 </p>
                 <Link href="/contact">
-                  <Button size="lg" className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
+                  <Button size="lg" className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold">
                     Get Started Today
                   </Button>
                 </Link>

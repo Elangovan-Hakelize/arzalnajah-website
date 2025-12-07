@@ -72,7 +72,7 @@ export default function Contact() {
       <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center space-x-2 text-[#D4A017] mb-4">
+            <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
               <Link href="/" className="hover:underline">Home</Link>
               <span>/</span>
               <span>Contact</span>
@@ -91,10 +91,10 @@ export default function Contact() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <Card className="border-2 border-gray-200 hover:border-[#D4A017] transition-colors">
+            <Card className="border-2 border-gray-200 hover:border-[#E56020] transition-colors">
               <CardContent className="p-6 text-center">
-                <div className="bg-[#D4A017] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8 text-[#D4A017]" />
+                <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="w-8 h-8 text-[#E56020]" />
                 </div>
                 <h3 className="font-bold text-[#0A1A4A] mb-2">Visit Us</h3>
                 <p className="text-gray-600 text-sm">
@@ -105,36 +105,36 @@ export default function Contact() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-200 hover:border-[#D4A017] transition-colors">
+            <Card className="border-2 border-gray-200 hover:border-[#E56020] transition-colors">
               <CardContent className="p-6 text-center">
-                <div className="bg-[#D4A017] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="w-8 h-8 text-[#D4A017]" />
+                <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Phone className="w-8 h-8 text-[#E56020]" />
                 </div>
                 <h3 className="font-bold text-[#0A1A4A] mb-2">Call Us</h3>
-                <a href="tel:+971523149927" className="text-gray-600 hover:text-[#D4A017] transition-colors">
+                <a href="tel:+971523149927" className="text-gray-600 hover:text-[#E56020] transition-colors">
                   +971 52 314 9927
                 </a>
                 <p className="text-sm text-gray-500 mt-2">Mon - Sat: 9AM - 6PM</p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-200 hover:border-[#D4A017] transition-colors">
+            <Card className="border-2 border-gray-200 hover:border-[#E56020] transition-colors">
               <CardContent className="p-6 text-center">
-                <div className="bg-[#D4A017] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-8 h-8 text-[#D4A017]" />
+                <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Mail className="w-8 h-8 text-[#E56020]" />
                 </div>
                 <h3 className="font-bold text-[#0A1A4A] mb-2">Email Us</h3>
-                <a href="mailto:info@arzalnajah.com" className="text-gray-600 hover:text-[#D4A017] transition-colors">
+                <a href="mailto:info@arzalnajah.com" className="text-gray-600 hover:text-[#E56020] transition-colors">
                   info@arzalnajah.com
                 </a>
                 <p className="text-sm text-gray-500 mt-2">24/7 Email Support</p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-200 hover:border-[#D4A017] transition-colors">
+            <Card className="border-2 border-gray-200 hover:border-[#E56020] transition-colors">
               <CardContent className="p-6 text-center">
-                <div className="bg-[#D4A017] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-[#D4A017]" />
+                <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-[#E56020]" />
                 </div>
                 <h3 className="font-bold text-[#0A1A4A] mb-2">Working Hours</h3>
                 <p className="text-gray-600 text-sm">
@@ -230,7 +230,7 @@ export default function Contact() {
                     required
                     value={formData.service}
                     onChange={(e) => handleChange(e as any)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#D4A017]"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#E56020]"
                   >
                     <option value="">Select a service</option>
                     {services.map((service, index) => (
@@ -258,7 +258,7 @@ export default function Contact() {
                 <Button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="w-full bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold py-6 text-lg"
+                  className="w-full bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold py-6 text-lg"
                 >
                   {isSubmitting ? (
                     "Sending..."
@@ -289,14 +289,14 @@ export default function Contact() {
                   title="ARZ Al Najah Office Location"
                 />
               </div>
-              <div className="mt-6 bg-white border-2 border-[#D4A017] rounded-lg p-6">
+              <div className="mt-6 bg-white border-2 border-[#E56020] rounded-lg p-6">
                 <h3 className="font-bold text-[#0A1A4A] mb-4">Quick Contact</h3>
                 <div className="space-y-3">
                   <a 
                     href="https://wa.me/971523149927" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-gray-700 hover:text-[#D4A017] transition-colors"
+                    className="flex items-center space-x-3 text-gray-700 hover:text-[#E56020] transition-colors"
                   >
                     <div className="bg-[#25D366] text-white w-10 h-10 rounded-full flex items-center justify-center">
                       <Phone className="w-5 h-5" />
@@ -308,9 +308,9 @@ export default function Contact() {
                   </a>
                   <a 
                     href="tel:+971523149927"
-                    className="flex items-center space-x-3 text-gray-700 hover:text-[#D4A017] transition-colors"
+                    className="flex items-center space-x-3 text-gray-700 hover:text-[#E56020] transition-colors"
                   >
-                    <div className="bg-[#D4A017] text-white w-10 h-10 rounded-full flex items-center justify-center">
+                    <div className="bg-[#E56020] text-white w-10 h-10 rounded-full flex items-center justify-center">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>

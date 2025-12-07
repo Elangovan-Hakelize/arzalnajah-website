@@ -19,12 +19,12 @@ export default function PrivacyPolicy() {
       <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center space-x-2 text-[#D4A017] mb-4">
+            <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
               <Link href="/" className="hover:underline">Home</Link>
               <span>/</span>
               <span>Privacy Policy</span>
             </div>
-            <Shield className="w-16 h-16 text-[#D4A017] mx-auto mb-6" />
+            <Shield className="w-16 h-16 text-[#E56020] mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Privacy Policy
             </h1>
@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
             <Card className="mb-8">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Eye className="w-8 h-8 text-[#D4A017]" />
+                  <Eye className="w-8 h-8 text-[#E56020]" />
                   <h2 className="text-2xl font-bold text-[#0A1A4A]">Information We Collect</h2>
                 </div>
                 <div className="space-y-4 text-gray-700">
@@ -92,7 +92,7 @@ export default function PrivacyPolicy() {
             <Card className="mb-8">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-3 mb-4">
-                  <FileText className="w-8 h-8 text-[#D4A017]" />
+                  <FileText className="w-8 h-8 text-[#E56020]" />
                   <h2 className="text-2xl font-bold text-[#0A1A4A]">How We Use Your Information</h2>
                 </div>
                 <div className="text-gray-700 space-y-3">
@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
             <Card className="mb-8">
               <CardContent className="p-8">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Lock className="w-8 h-8 text-[#D4A017]" />
+                  <Lock className="w-8 h-8 text-[#E56020]" />
                   <h2 className="text-2xl font-bold text-[#0A1A4A]">Information Sharing and Disclosure</h2>
                 </div>
                 <div className="text-gray-700 space-y-3">
@@ -169,7 +169,7 @@ export default function PrivacyPolicy() {
                     <li>Lodge a complaint with relevant data protection authorities</li>
                   </ul>
                   <p className="mt-3">
-                    To exercise these rights, please contact us at <a href="mailto:info@arzalnajah.com" className="text-[#D4A017] hover:underline">info@arzalnajah.com</a>
+                    To exercise these rights, please contact us at <a href="mailto:info@arzalnajah.com" className="text-[#E56020] hover:underline">info@arzalnajah.com</a>
                   </p>
                 </div>
               </CardContent>
@@ -221,8 +221,8 @@ export default function PrivacyPolicy() {
                   <p><strong>ARZ Al Najah Business Setup Services</strong></p>
                   <p>Office No 806, 8th Floor, City Avenue Building</p>
                   <p>Port Saeed, Dubai – UAE</p>
-                  <p>Phone: <a href="tel:+971523149927" className="text-[#D4A017] hover:underline">+971 52 314 9927</a></p>
-                  <p>Email: <a href="mailto:info@arzalnajah.com" className="text-[#D4A017] hover:underline">info@arzalnajah.com</a></p>
+                  <p>Phone: <a href="tel:+971523149927" className="text-[#E56020] hover:underline">+971 52 314 9927</a></p>
+                  <p>Email: <a href="mailto:info@arzalnajah.com" className="text-[#E56020] hover:underline">info@arzalnajah.com</a></p>
                 </div>
               </CardContent>
             </Card>

@@ -99,7 +99,7 @@ export default function Testimonials() {
       <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center space-x-2 text-[#D4A017] mb-4">
+            <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
               <Link href="/" className="hover:underline">Home</Link>
               <span>/</span>
               <span>Testimonials</span>
@@ -119,19 +119,19 @@ export default function Testimonials() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#D4A017] mb-2">500+</div>
+              <div className="text-4xl font-bold text-[#E56020] mb-2">500+</div>
               <div className="text-gray-600">Happy Clients</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#D4A017] mb-2">98%</div>
+              <div className="text-4xl font-bold text-[#E56020] mb-2">98%</div>
               <div className="text-gray-600">Satisfaction Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#D4A017] mb-2">4.9/5</div>
+              <div className="text-4xl font-bold text-[#E56020] mb-2">4.9/5</div>
               <div className="text-gray-600">Average Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#D4A017] mb-2">15+</div>
+              <div className="text-4xl font-bold text-[#E56020] mb-2">15+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
           </div>
@@ -147,10 +147,10 @@ export default function Testimonials() {
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-[#D4A017] fill-current" />
+                      <Star key={i} className="w-5 h-5 text-[#E56020] fill-current" />
                     ))}
                   </div>
-                  <Quote className="w-10 h-10 text-[#D4A017] mb-4 opacity-50" />
+                  <Quote className="w-10 h-10 text-[#E56020] mb-4 opacity-50" />
                   <p className="text-gray-700 mb-6 leading-relaxed">
                     "{testimonial.text}"
                   </p>
@@ -201,7 +201,7 @@ export default function Testimonials() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-[#D4A017] to-[#B8900F] text-white">
+      <section className="py-16 bg-gradient-to-br from-[#E56020] to-[#C4501A] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Join Our Growing List of Satisfied Clients
@@ -212,7 +212,7 @@ export default function Testimonials() {
           <Button 
             size="lg"
             onClick={openPopup}
-            className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold"
+            className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold"
           >
             Get Free Consultation
           </Button>

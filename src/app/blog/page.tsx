@@ -64,7 +64,7 @@ export default function Blog() {
       <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center space-x-2 text-[#D4A017] mb-4">
+            <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
               <Link href="/" className="hover:underline">Home</Link>
               <span>/</span>
               <span>Blog</span>
@@ -84,7 +84,7 @@ export default function Blog() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Featured Article */}
-            <Card className="mb-12 overflow-hidden border-2 border-[#D4A017] hover:shadow-2xl transition-shadow">
+            <Card className="mb-12 overflow-hidden border-2 border-[#E56020] hover:shadow-2xl transition-shadow">
               <div className="grid md:grid-cols-2">
                 <div 
                   className="h-64 md:h-auto bg-cover bg-center"
@@ -92,7 +92,7 @@ export default function Blog() {
                 />
                 <CardContent className="p-8 flex flex-col justify-center">
                   <div className="flex items-center space-x-4 mb-4">
-                    <span className="bg-[#D4A017] text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-[#E56020] text-white px-3 py-1 rounded-full text-sm font-semibold">
                       Featured
                     </span>
                     <span className="text-gray-600 text-sm">{articles[0].category}</span>
@@ -112,7 +112,7 @@ export default function Blog() {
                         <span>{articles[0].readTime}</span>
                       </div>
                     </div>
-                    <Link href={`/blog/${articles[0].slug}`} className="text-[#D4A017] font-semibold flex items-center space-x-2 hover:underline">
+                    <Link href={`/blog/${articles[0].slug}`} className="text-[#E56020] font-semibold flex items-center space-x-2 hover:underline">
                       <span>Read More</span>
                       <ArrowRight className="w-4 h-4" />
                     </Link>
@@ -124,18 +124,18 @@ export default function Blog() {
             {/* Other Articles */}
             <div className="grid md:grid-cols-2 gap-8">
               {articles.slice(1).map((article, index) => (
-                <Card key={index} className="overflow-hidden border-gray-200 hover:border-[#D4A017] hover:shadow-xl transition-all group">
+                <Card key={index} className="overflow-hidden border-gray-200 hover:border-[#E56020] hover:shadow-xl transition-all group">
                   <div 
                     className="h-48 bg-cover bg-center"
                     style={{ backgroundImage: `url(${article.image})` }}
                   />
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-3 mb-3">
-                      <span className="text-[#D4A017] text-sm font-semibold">{article.category}</span>
+                      <span className="text-[#E56020] text-sm font-semibold">{article.category}</span>
                       <span className="text-gray-400">•</span>
                       <span className="text-gray-500 text-sm">{article.readTime}</span>
                     </div>
-                    <h3 className="text-xl font-bold text-[#0A1A4A] mb-3 group-hover:text-[#D4A017] transition-colors">
+                    <h3 className="text-xl font-bold text-[#0A1A4A] mb-3 group-hover:text-[#E56020] transition-colors">
                       {article.title}
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-3">{article.excerpt}</p>
@@ -144,7 +144,7 @@ export default function Blog() {
                         <Calendar className="w-4 h-4" />
                         <span>{new Date(article.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                       </div>
-                      <Link href={`/blog/${article.slug}`} className="text-[#D4A017] font-semibold flex items-center space-x-2 hover:underline">
+                      <Link href={`/blog/${article.slug}`} className="text-[#E56020] font-semibold flex items-center space-x-2 hover:underline">
                         <span>Read More</span>
                         <ArrowRight className="w-4 h-4" />
                       </Link>
@@ -158,7 +158,7 @@ export default function Blog() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-[#D4A017] to-[#B8900F] text-white">
+      <section className="py-16 bg-gradient-to-br from-[#E56020] to-[#C4501A] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Business in Dubai?
@@ -167,7 +167,7 @@ export default function Blog() {
             Get expert guidance from our business setup specialists
           </p>
           <Link href="/contact">
-            <button className="bg-white text-[#D4A017] hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+            <button className="bg-white text-[#E56020] hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
               Schedule Free Consultation
             </button>
           </Link>

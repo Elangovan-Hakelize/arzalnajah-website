@@ -77,9 +77,9 @@ export default function InvestorVisaUAEGuide() {
       <section className="bg-gray-50 py-8 border-b">
         <div className="container mx-auto px-4">
           <div className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#D4A017]">Home</Link>
+            <Link href="/" className="hover:text-[#E56020]">Home</Link>
             <span>/</span>
-            <Link href="/blog" className="hover:text-[#D4A017]">Blog</Link>
+            <Link href="/blog" className="hover:text-[#E56020]">Blog</Link>
             <span>/</span>
             <span className="text-[#0A1A4A]">Investor Visa UAE Guide</span>
           </div>
@@ -90,13 +90,13 @@ export default function InvestorVisaUAEGuide() {
       <article className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Link href="/blog" className="inline-flex items-center text-[#D4A017] hover:underline mb-6">
+            <Link href="/blog" className="inline-flex items-center text-[#E56020] hover:underline mb-6">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Blog
             </Link>
 
             <div className="mb-8">
-              <span className="bg-[#D4A017] text-white px-4 py-1 rounded-full text-sm font-semibold">
+              <span className="bg-[#E56020] text-white px-4 py-1 rounded-full text-sm font-semibold">
                 Visa Services
               </span>
             </div>
@@ -144,7 +144,7 @@ export default function InvestorVisaUAEGuide() {
                   <ul className="space-y-2">
                     {eligibility.map((item, index) => (
                       <li key={index} className="flex items-start space-x-2">
-                        <span className="text-[#D4A017] font-bold">✓</span>
+                        <span className="text-[#E56020] font-bold">✓</span>
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
@@ -159,7 +159,7 @@ export default function InvestorVisaUAEGuide() {
                 {documents.map((doc, index) => (
                   <Card key={index} className="border-gray-200">
                     <CardContent className="p-4 flex items-center space-x-3">
-                      <FileText className="w-5 h-5 text-[#D4A017] flex-shrink-0" />
+                      <FileText className="w-5 h-5 text-[#E56020] flex-shrink-0" />
                       <span className="text-gray-700 text-sm">{doc}</span>
                     </CardContent>
                   </Card>
@@ -175,14 +175,14 @@ export default function InvestorVisaUAEGuide() {
                     <CardContent className="p-6">
                       <div className="flex gap-4">
                         <div className="flex-shrink-0">
-                          <div className="w-12 h-12 bg-[#D4A017] text-white rounded-full flex items-center justify-center font-bold">
+                          <div className="w-12 h-12 bg-[#E56020] text-white rounded-full flex items-center justify-center font-bold">
                             {item.step}
                           </div>
                         </div>
                         <div className="flex-1">
                           <div className="flex items-center justify-between mb-2">
                             <h3 className="text-xl font-bold text-[#0A1A4A]">{item.title}</h3>
-                            <span className="text-sm text-[#D4A017] font-semibold">{item.duration}</span>
+                            <span className="text-sm text-[#E56020] font-semibold">{item.duration}</span>
                           </div>
                           <p className="text-gray-600">{item.description}</p>
                         </div>
@@ -195,7 +195,7 @@ export default function InvestorVisaUAEGuide() {
               <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
                 Costs Involved
               </h2>
-              <Card className="border-2 border-[#D4A017] mb-8">
+              <Card className="border-2 border-[#E56020] mb-8">
                 <CardContent className="p-6">
                   <div className="space-y-3">
                     <div className="flex justify-between items-center py-2">
@@ -224,7 +224,7 @@ export default function InvestorVisaUAEGuide() {
                     </div>
                     <div className="flex justify-between items-center pt-4 border-t-2 border-gray-200 font-bold text-lg">
                       <span className="text-[#0A1A4A]">Total Approximate Cost:</span>
-                      <span className="text-[#D4A017]">AED 3,500 - 5,000</span>
+                      <span className="text-[#E56020]">AED 3,500 - 5,000</span>
                     </div>
                   </div>
                 </CardContent>
@@ -280,7 +280,7 @@ export default function InvestorVisaUAEGuide() {
             </div>
 
             {/* CTA Card */}
-            <Card className="border-2 border-[#D4A017] mt-12">
+            <Card className="border-2 border-[#E56020] mt-12">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">
                   Need Help with Your Investor Visa Application?
@@ -289,7 +289,7 @@ export default function InvestorVisaUAEGuide() {
                   Let our experts handle your visa processing from start to finish
                 </p>
                 <Link href="/contact">
-                  <Button size="lg" className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
+                  <Button size="lg" className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold">
                     Get Expert Visa Assistance
                   </Button>
                 </Link>

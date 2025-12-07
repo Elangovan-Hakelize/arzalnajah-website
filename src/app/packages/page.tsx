@@ -144,7 +144,7 @@ export default function Packages() {
       <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center space-x-2 text-[#D4A017] mb-4">
+            <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
               <Link href="/" className="hover:underline">Home</Link>
               <span>/</span>
               <span>Packages</span>
@@ -172,29 +172,29 @@ export default function Packages() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {mainlandPackages.map((pkg, index) => (
-              <Card key={index} className={`relative ${pkg.popular ? 'border-[#D4A017] border-2 shadow-2xl scale-105' : 'border-gray-200'}`}>
+              <Card key={index} className={`relative ${pkg.popular ? 'border-[#E56020] border-2 shadow-2xl scale-105' : 'border-gray-200'}`}>
                 {pkg.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#D4A017] text-white px-6 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#E56020] text-white px-6 py-1 rounded-full text-sm font-semibold">
                     Most Popular
                   </div>
                 )}
                 <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-4">
-                    <pkg.icon className={`w-12 h-12 ${pkg.popular ? 'text-[#D4A017]' : 'text-[#0A1A4A]'}`} />
+                    <pkg.icon className={`w-12 h-12 ${pkg.popular ? 'text-[#E56020]' : 'text-[#0A1A4A]'}`} />
                   </div>
                   <h3 className="text-2xl font-bold text-[#0A1A4A] mb-2">{pkg.name}</h3>
-                  <div className="text-4xl font-bold text-[#D4A017] mb-2">{pkg.price}</div>
+                  <div className="text-4xl font-bold text-[#E56020] mb-2">{pkg.price}</div>
                   <p className="text-sm text-gray-600 mb-6">Ideal for: {pkg.ideal}</p>
                   <ul className="space-y-3 mb-8">
                     {pkg.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start space-x-2">
-                        <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700 text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <Link href="/contact">
-                    <Button className={`w-full ${pkg.popular ? 'bg-[#D4A017] hover:bg-[#B8900F]' : 'bg-[#0A1A4A] hover:bg-[#0D2158]'} text-white font-semibold`}>
+                    <Button className={`w-full ${pkg.popular ? 'bg-[#E56020] hover:bg-[#C4501A]' : 'bg-[#0A1A4A] hover:bg-[#0D2158]'} text-white font-semibold`}>
                       Choose Package
                     </Button>
                   </Link>
@@ -218,26 +218,26 @@ export default function Packages() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {freezonePackages.map((pkg, index) => (
-              <Card key={index} className={`${pkg.popular ? 'border-[#D4A017] border-2 shadow-xl' : 'border-gray-200'}`}>
+              <Card key={index} className={`${pkg.popular ? 'border-[#E56020] border-2 shadow-xl' : 'border-gray-200'}`}>
                 {pkg.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#D4A017] text-white px-6 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#E56020] text-white px-6 py-1 rounded-full text-sm font-semibold">
                     Most Popular
                   </div>
                 )}
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-[#0A1A4A] mb-2">{pkg.name}</h3>
-                  <div className="text-4xl font-bold text-[#D4A017] mb-2">{pkg.price}</div>
+                  <div className="text-4xl font-bold text-[#E56020] mb-2">{pkg.price}</div>
                   <p className="text-sm text-gray-600 mb-6">Ideal for: {pkg.ideal}</p>
                   <ul className="space-y-3 mb-8">
                     {pkg.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start space-x-2">
-                        <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700 text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <Link href="/contact">
-                    <Button className={`w-full ${pkg.popular ? 'bg-[#D4A017] hover:bg-[#B8900F]' : 'bg-[#0A1A4A] hover:bg-[#0D2158]'} text-white font-semibold`}>
+                    <Button className={`w-full ${pkg.popular ? 'bg-[#E56020] hover:bg-[#C4501A]' : 'bg-[#0A1A4A] hover:bg-[#0D2158]'} text-white font-semibold`}>
                       Choose Package
                     </Button>
                   </Link>
@@ -260,7 +260,7 @@ export default function Packages() {
                 <tr className="bg-[#0A1A4A] text-white">
                   <th className="p-4 text-left font-semibold">Feature</th>
                   <th className="p-4 text-center font-semibold">Starter</th>
-                  <th className="p-4 text-center font-semibold bg-[#D4A017]">Professional</th>
+                  <th className="p-4 text-center font-semibold bg-[#E56020]">Professional</th>
                   <th className="p-4 text-center font-semibold">Enterprise</th>
                 </tr>
               </thead>
@@ -269,7 +269,7 @@ export default function Packages() {
                   <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
                     <td className="p-4 font-medium text-gray-900">{row.feature}</td>
                     <td className="p-4 text-center text-gray-700">{row.starter}</td>
-                    <td className="p-4 text-center text-gray-700 bg-[#D4A017] bg-opacity-5">{row.professional}</td>
+                    <td className="p-4 text-center text-gray-700 bg-[#E56020] bg-opacity-5">{row.professional}</td>
                     <td className="p-4 text-center text-gray-700">{row.enterprise}</td>
                   </tr>
                 ))}
@@ -290,7 +290,7 @@ export default function Packages() {
               <Card key={index} className="border-gray-200">
                 <CardContent className="p-4 flex items-center justify-between">
                   <span className="font-medium text-gray-900">{item.service}</span>
-                  <span className="text-[#D4A017] font-bold">{item.price}</span>
+                  <span className="text-[#E56020] font-bold">{item.price}</span>
                 </CardContent>
               </Card>
             ))}
@@ -301,7 +301,7 @@ export default function Packages() {
       {/* Custom Package CTA */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <Card className="border-2 border-[#D4A017] max-w-4xl mx-auto">
+          <Card className="border-2 border-[#E56020] max-w-4xl mx-auto">
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl font-bold text-[#0A1A4A] mb-4">
                 Need a Custom Package?
@@ -310,7 +310,7 @@ export default function Packages() {
                 Every business is unique. Contact us for a tailored solution that perfectly fits your requirements and budget.
               </p>
               <Link href="/contact">
-                <Button size="lg" className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
+                <Button size="lg" className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold">
                   Request Custom Quote
                 </Button>
               </Link>
@@ -320,7 +320,7 @@ export default function Packages() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-[#D4A017] to-[#B8900F] text-white">
+      <section className="py-16 bg-gradient-to-br from-[#E56020] to-[#C4501A] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Get Started?
@@ -330,12 +330,12 @@ export default function Packages() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              <Button size="lg" className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold">
+              <Button size="lg" className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold">
                 Schedule Consultation
               </Button>
             </Link>
             <a href="https://wa.me/971523149927" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#D4A017]">
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#E56020]">
                 WhatsApp Us
               </Button>
             </a>

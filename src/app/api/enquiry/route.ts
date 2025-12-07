@@ -33,9 +33,9 @@ export async function POST(request: NextRequest) {
                 .content { background: #f8f9fa; padding: 30px; border-radius: 0 0 8px 8px; }
                 .field { margin-bottom: 20px; }
                 .label { font-weight: bold; color: #0A1A4A; display: block; margin-bottom: 5px; }
-                .value { background: white; padding: 12px; border-radius: 4px; border-left: 3px solid #D4A017; }
+                .value { background: white; padding: 12px; border-radius: 4px; border-left: 3px solid #E56020; }
                 .footer { text-align: center; margin-top: 20px; color: #666; font-size: 12px; }
-                .badge { background: #D4A017; color: white; padding: 5px 15px; border-radius: 20px; display: inline-block; margin-bottom: 20px; }
+                .badge { background: #E56020; color: white; padding: 5px 15px; border-radius: 20px; display: inline-block; margin-bottom: 20px; }
               </style>
             </head>
             <body>
@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
                     </div>
                   ` : ''}
                   
-                  <div style="margin-top: 30px; padding: 20px; background: #fff3cd; border-radius: 4px; border-left: 3px solid #D4A017;">
+                  <div style="margin-top: 30px; padding: 20px; background: #fff3cd; border-radius: 4px; border-left: 3px solid #E56020;">
                     <strong style="color: #856404;">⚡ Action Required:</strong>
                     <p style="margin: 5px 0 0 0; color: #856404;">Please respond to this enquiry within 24 hours for best conversion rates.</p>
                   </div>

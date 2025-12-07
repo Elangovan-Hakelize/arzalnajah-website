@@ -178,7 +178,7 @@ export default function VisaServices() {
         <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
-              <div className="flex items-center space-x-2 text-[#D4A017] mb-4">
+              <div className="flex items-center space-x-2 text-[#E56020] mb-4">
                 <Link href="/" className="hover:underline">Home</Link>
                 <span>/</span>
                 <Link href="/services/visa-services" className="hover:underline">Services</Link>
@@ -193,7 +193,7 @@ export default function VisaServices() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
+                  <Button size="lg" className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold">
                     Get Free Consultation
                   </Button>
                 </Link>
@@ -215,17 +215,17 @@ export default function VisaServices() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {visaTypes.map((visa, index) => (
-                <Card key={index} className="border-2 border-gray-200 hover:border-[#D4A017] hover:shadow-xl transition-all">
+                <Card key={index} className="border-2 border-gray-200 hover:border-[#E56020] hover:shadow-xl transition-all">
                   <CardContent className="p-8">
-                    <div className="bg-[#D4A017] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                      <visa.icon className="w-8 h-8 text-[#D4A017]" />
+                    <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                      <visa.icon className="w-8 h-8 text-[#E56020]" />
                     </div>
                     <h3 className="text-2xl font-bold text-[#0A1A4A] mb-3">{visa.title}</h3>
                     <p className="text-gray-600 mb-4">{visa.description}</p>
                     <div className="flex justify-between items-center mb-6 pb-6 border-b">
                       <div>
                         <div className="text-sm text-gray-500">Starting from</div>
-                        <div className="text-2xl font-bold text-[#D4A017]">{visa.price}</div>
+                        <div className="text-2xl font-bold text-[#E56020]">{visa.price}</div>
                       </div>
                       <div className="text-right">
                         <div className="text-sm text-gray-500">Validity</div>
@@ -235,7 +235,7 @@ export default function VisaServices() {
                     <ul className="space-y-3 mb-6">
                       {visa.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start space-x-2">
-                          <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700 text-sm">{feature}</span>
                         </li>
                       ))}
@@ -262,7 +262,7 @@ export default function VisaServices() {
               {process.map((item, index) => (
                 <div key={index} className="flex gap-6 mb-8 last:mb-0">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-[#D4A017] text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 bg-[#E56020] text-white rounded-full flex items-center justify-center font-bold text-lg">
                       {item.step}
                     </div>
                   </div>
@@ -285,14 +285,14 @@ export default function VisaServices() {
             <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <div>
                 <h3 className="text-xl font-bold text-[#0A1A4A] mb-6 flex items-center">
-                  <Briefcase className="w-6 h-6 text-[#D4A017] mr-2" />
+                  <Briefcase className="w-6 h-6 text-[#E56020] mr-2" />
                   Investor Visa
                 </h3>
                 <div className="space-y-3">
                   {documents.investor.map((doc, index) => (
                     <Card key={index} className="border-gray-200">
                       <CardContent className="p-3 flex items-center space-x-2">
-                        <FileText className="w-4 h-4 text-[#D4A017] flex-shrink-0" />
+                        <FileText className="w-4 h-4 text-[#E56020] flex-shrink-0" />
                         <span className="text-sm text-gray-700">{doc}</span>
                       </CardContent>
                     </Card>
@@ -301,14 +301,14 @@ export default function VisaServices() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-[#0A1A4A] mb-6 flex items-center">
-                  <Users className="w-6 h-6 text-[#D4A017] mr-2" />
+                  <Users className="w-6 h-6 text-[#E56020] mr-2" />
                   Employment Visa
                 </h3>
                 <div className="space-y-3">
                   {documents.employment.map((doc, index) => (
                     <Card key={index} className="border-gray-200">
                       <CardContent className="p-3 flex items-center space-x-2">
-                        <FileText className="w-4 h-4 text-[#D4A017] flex-shrink-0" />
+                        <FileText className="w-4 h-4 text-[#E56020] flex-shrink-0" />
                         <span className="text-sm text-gray-700">{doc}</span>
                       </CardContent>
                     </Card>
@@ -317,14 +317,14 @@ export default function VisaServices() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-[#0A1A4A] mb-6 flex items-center">
-                  <Home className="w-6 h-6 text-[#D4A017] mr-2" />
+                  <Home className="w-6 h-6 text-[#E56020] mr-2" />
                   Family Visa
                 </h3>
                 <div className="space-y-3">
                   {documents.family.map((doc, index) => (
                     <Card key={index} className="border-gray-200">
                       <CardContent className="p-3 flex items-center space-x-2">
-                        <FileText className="w-4 h-4 text-[#D4A017] flex-shrink-0" />
+                        <FileText className="w-4 h-4 text-[#E56020] flex-shrink-0" />
                         <span className="text-sm text-gray-700">{doc}</span>
                       </CardContent>
                     </Card>
@@ -357,7 +357,7 @@ export default function VisaServices() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-gradient-to-br from-[#D4A017] to-[#B8900F] text-white">
+        <section className="py-16 bg-gradient-to-br from-[#E56020] to-[#C4501A] text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Need Help with UAE Visa Processing?
@@ -367,12 +367,12 @@ export default function VisaServices() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold">
+                <Button size="lg" className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold">
                   Schedule Consultation
                 </Button>
               </Link>
               <a href="https://wa.me/971523149927" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#D4A017]">
+                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#E56020]">
                   WhatsApp Us
                 </Button>
               </a>

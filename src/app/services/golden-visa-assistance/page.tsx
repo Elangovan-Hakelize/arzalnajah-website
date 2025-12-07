@@ -189,7 +189,7 @@ export default function GoldenVisaAssistance() {
         <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
-              <div className="flex items-center space-x-2 text-[#D4A017] mb-4">
+              <div className="flex items-center space-x-2 text-[#E56020] mb-4">
                 <Link href="/" className="hover:underline">Home</Link>
                 <span>/</span>
                 <Link href="/services/golden-visa-assistance" className="hover:underline">Services</Link>
@@ -204,7 +204,7 @@ export default function GoldenVisaAssistance() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
+                  <Button size="lg" className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold">
                     Check Eligibility
                   </Button>
                 </Link>
@@ -226,15 +226,15 @@ export default function GoldenVisaAssistance() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {categories.map((category, index) => (
-                <Card key={index} className="border-2 border-gray-200 hover:border-[#D4A017] hover:shadow-xl transition-all">
+                <Card key={index} className="border-2 border-gray-200 hover:border-[#E56020] hover:shadow-xl transition-all">
                   <CardContent className="p-8">
                     <div className="flex items-start justify-between mb-6">
-                      <div className="bg-[#D4A017] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center">
-                        <category.icon className="w-8 h-8 text-[#D4A017]" />
+                      <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center">
+                        <category.icon className="w-8 h-8 text-[#E56020]" />
                       </div>
                       <div className="text-right">
                         <div className="text-sm text-gray-500">Validity</div>
-                        <div className="text-xl font-bold text-[#D4A017]">{category.validity}</div>
+                        <div className="text-xl font-bold text-[#E56020]">{category.validity}</div>
                       </div>
                     </div>
                     <h3 className="text-2xl font-bold text-[#0A1A4A] mb-3">{category.title}</h3>
@@ -243,7 +243,7 @@ export default function GoldenVisaAssistance() {
                       <h4 className="font-semibold text-[#0A1A4A] mb-3">Requirements:</h4>
                       {category.requirements.map((req, idx) => (
                         <div key={idx} className="flex items-start space-x-2">
-                          <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700 text-sm">{req}</span>
                         </div>
                       ))}
@@ -265,7 +265,7 @@ export default function GoldenVisaAssistance() {
               {benefits.map((benefit, index) => (
                 <Card key={index} className="border-2 border-gray-200">
                   <CardContent className="p-6 flex items-center space-x-4">
-                    <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
                     <span className="font-semibold text-[#0A1A4A]">{benefit}</span>
                   </CardContent>
                 </Card>
@@ -284,7 +284,7 @@ export default function GoldenVisaAssistance() {
               {process.map((item, index) => (
                 <div key={index} className="flex gap-6 mb-8 last:mb-0">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-[#D4A017] text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 bg-[#E56020] text-white rounded-full flex items-center justify-center font-bold text-lg">
                       {item.step}
                     </div>
                   </div>
@@ -307,14 +307,14 @@ export default function GoldenVisaAssistance() {
             <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <div>
                 <h3 className="text-xl font-bold text-[#0A1A4A] mb-6 flex items-center">
-                  <Briefcase className="w-6 h-6 text-[#D4A017] mr-2" />
+                  <Briefcase className="w-6 h-6 text-[#E56020] mr-2" />
                   Investor Category
                 </h3>
                 <div className="space-y-3">
                   {documents.investor.map((doc, index) => (
                     <Card key={index} className="border-gray-200">
                       <CardContent className="p-3 flex items-center space-x-2">
-                        <FileText className="w-4 h-4 text-[#D4A017] flex-shrink-0" />
+                        <FileText className="w-4 h-4 text-[#E56020] flex-shrink-0" />
                         <span className="text-sm text-gray-700">{doc}</span>
                       </CardContent>
                     </Card>
@@ -323,14 +323,14 @@ export default function GoldenVisaAssistance() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-[#0A1A4A] mb-6 flex items-center">
-                  <Users className="w-6 h-6 text-[#D4A017] mr-2" />
+                  <Users className="w-6 h-6 text-[#E56020] mr-2" />
                   Professional Category
                 </h3>
                 <div className="space-y-3">
                   {documents.professional.map((doc, index) => (
                     <Card key={index} className="border-gray-200">
                       <CardContent className="p-3 flex items-center space-x-2">
-                        <FileText className="w-4 h-4 text-[#D4A017] flex-shrink-0" />
+                        <FileText className="w-4 h-4 text-[#E56020] flex-shrink-0" />
                         <span className="text-sm text-gray-700">{doc}</span>
                       </CardContent>
                     </Card>
@@ -339,14 +339,14 @@ export default function GoldenVisaAssistance() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-[#0A1A4A] mb-6 flex items-center">
-                  <Star className="w-6 h-6 text-[#D4A017] mr-2" />
+                  <Star className="w-6 h-6 text-[#E56020] mr-2" />
                   Specialized Talents
                 </h3>
                 <div className="space-y-3">
                   {documents.specialized.map((doc, index) => (
                     <Card key={index} className="border-gray-200">
                       <CardContent className="p-3 flex items-center space-x-2">
-                        <FileText className="w-4 h-4 text-[#D4A017] flex-shrink-0" />
+                        <FileText className="w-4 h-4 text-[#E56020] flex-shrink-0" />
                         <span className="text-sm text-gray-700">{doc}</span>
                       </CardContent>
                     </Card>
@@ -379,7 +379,7 @@ export default function GoldenVisaAssistance() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-gradient-to-br from-[#D4A017] to-[#B8900F] text-white">
+        <section className="py-16 bg-gradient-to-br from-[#E56020] to-[#C4501A] text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Apply for UAE Golden Visa?
@@ -389,12 +389,12 @@ export default function GoldenVisaAssistance() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold">
+                <Button size="lg" className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold">
                   Schedule Consultation
                 </Button>
               </Link>
               <a href="https://wa.me/971523149927" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#D4A017]">
+                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#E56020]">
                   WhatsApp Us
                 </Button>
               </a>

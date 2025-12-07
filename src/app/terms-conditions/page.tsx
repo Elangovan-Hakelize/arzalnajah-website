@@ -19,12 +19,12 @@ export default function TermsConditions() {
       <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center space-x-2 text-[#D4A017] mb-4">
+            <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
               <Link href="/" className="hover:underline">Home</Link>
               <span>/</span>
               <span>Terms & Conditions</span>
             </div>
-            <Scale className="w-16 h-16 text-[#D4A017] mx-auto mb-6" />
+            <Scale className="w-16 h-16 text-[#E56020] mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Terms & Conditions
             </h1>
@@ -39,10 +39,10 @@ export default function TermsConditions() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="mb-8 border-2 border-[#D4A017]">
+            <Card className="mb-8 border-2 border-[#E56020]">
               <CardContent className="p-8 bg-yellow-50">
                 <div className="flex items-start space-x-3">
-                  <AlertCircle className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <AlertCircle className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <div>
                     <h2 className="text-xl font-bold text-[#0A1A4A] mb-2">Important Disclaimer</h2>
                     <p className="text-gray-700 leading-relaxed">
@@ -219,8 +219,8 @@ export default function TermsConditions() {
                   <p><strong>ARZ Al Najah Business Setup Services</strong></p>
                   <p>Office No 806, 8th Floor, City Avenue Building</p>
                   <p>Port Saeed, Dubai – UAE</p>
-                  <p>Phone: <a href="tel:+971523149927" className="text-[#D4A017] hover:underline">+971 52 314 9927</a></p>
-                  <p>Email: <a href="mailto:info@arzalnajah.com" className="text-[#D4A017] hover:underline">info@arzalnajah.com</a></p>
+                  <p>Phone: <a href="tel:+971523149927" className="text-[#E56020] hover:underline">+971 52 314 9927</a></p>
+                  <p>Email: <a href="mailto:info@arzalnajah.com" className="text-[#E56020] hover:underline">info@arzalnajah.com</a></p>
                 </div>
               </CardContent>
             </Card>

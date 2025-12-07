@@ -35,9 +35,9 @@ export default function CostOfBusinessSetupDubai2025() {
       <section className="bg-gray-50 py-8 border-b">
         <div className="container mx-auto px-4">
           <div className="flex items-center space-x-2 text-sm text-gray-600">
-            <Link href="/" className="hover:text-[#D4A017]">Home</Link>
+            <Link href="/" className="hover:text-[#E56020]">Home</Link>
             <span>/</span>
-            <Link href="/blog" className="hover:text-[#D4A017]">Blog</Link>
+            <Link href="/blog" className="hover:text-[#E56020]">Blog</Link>
             <span>/</span>
             <span className="text-[#0A1A4A]">Cost of Business Setup in Dubai 2025</span>
           </div>
@@ -48,13 +48,13 @@ export default function CostOfBusinessSetupDubai2025() {
       <article className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Link href="/blog" className="inline-flex items-center text-[#D4A017] hover:underline mb-6">
+            <Link href="/blog" className="inline-flex items-center text-[#E56020] hover:underline mb-6">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Blog
             </Link>
 
             <div className="mb-8">
-              <span className="bg-[#D4A017] text-white px-4 py-1 rounded-full text-sm font-semibold">
+              <span className="bg-[#E56020] text-white px-4 py-1 rounded-full text-sm font-semibold">
                 Business Setup
               </span>
             </div>
@@ -100,12 +100,12 @@ export default function CostOfBusinessSetupDubai2025() {
                     {mainlandCosts.map((item, index) => (
                       <div key={index} className="flex justify-between items-center py-2 border-b last:border-b-0">
                         <span className="text-gray-700">{item.item}</span>
-                        <span className="font-semibold text-[#D4A017]">{item.cost}</span>
+                        <span className="font-semibold text-[#E56020]">{item.cost}</span>
                       </div>
                     ))}
                     <div className="flex justify-between items-center pt-4 font-bold text-lg">
                       <span className="text-[#0A1A4A]">Total Estimated Cost:</span>
-                      <span className="text-[#D4A017]">AED 30,000 - 80,000</span>
+                      <span className="text-[#E56020]">AED 30,000 - 80,000</span>
                     </div>
                   </div>
                 </CardContent>
@@ -125,12 +125,12 @@ export default function CostOfBusinessSetupDubai2025() {
                     {freezoneCosts.map((item, index) => (
                       <div key={index} className="flex justify-between items-center py-2 border-b last:border-b-0">
                         <span className="text-gray-700">{item.item}</span>
-                        <span className="font-semibold text-[#D4A017]">{item.cost}</span>
+                        <span className="font-semibold text-[#E56020]">{item.cost}</span>
                       </div>
                     ))}
                     <div className="flex justify-between items-center pt-4 font-bold text-lg">
                       <span className="text-[#0A1A4A]">Total Estimated Cost:</span>
-                      <span className="text-[#D4A017]">AED 18,000 - 45,000</span>
+                      <span className="text-[#E56020]">AED 18,000 - 45,000</span>
                     </div>
                   </div>
                 </CardContent>
@@ -141,31 +141,31 @@ export default function CostOfBusinessSetupDubai2025() {
               </h2>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <div>
                     <strong>Bank Account Opening:</strong> AED 2,000 - 5,000 (varies by bank)
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <div>
                     <strong>Document Attestation:</strong> AED 500 - 1,500 per document
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <div>
                     <strong>PRO Services (Annual):</strong> AED 12,000 - 18,000
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <div>
                     <strong>Medical Insurance (per employee):</strong> AED 1,500 - 3,000 annually
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <div>
                     <strong>Office Furniture & Setup:</strong> AED 5,000 - 20,000
                   </div>
@@ -202,7 +202,7 @@ export default function CostOfBusinessSetupDubai2025() {
             </div>
 
             {/* CTA Card */}
-            <Card className="border-2 border-[#D4A017] mt-12">
+            <Card className="border-2 border-[#E56020] mt-12">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">
                   Get a Detailed Cost Estimate for Your Business
@@ -211,7 +211,7 @@ export default function CostOfBusinessSetupDubai2025() {
                   Contact us for a free consultation and personalized cost breakdown
                 </p>
                 <Link href="/contact">
-                  <Button size="lg" className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
+                  <Button size="lg" className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold">
                     Schedule Free Consultation
                   </Button>
                 </Link>

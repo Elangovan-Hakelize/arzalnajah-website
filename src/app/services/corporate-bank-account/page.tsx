@@ -165,7 +165,7 @@ export default function CorporateBankAccount() {
         <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
-              <div className="flex items-center space-x-2 text-[#D4A017] mb-4">
+              <div className="flex items-center space-x-2 text-[#E56020] mb-4">
                 <Link href="/" className="hover:underline">Home</Link>
                 <span>/</span>
                 <Link href="/services/corporate-bank-account" className="hover:underline">Services</Link>
@@ -180,7 +180,7 @@ export default function CorporateBankAccount() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold">
+                  <Button size="lg" className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold">
                     Get Free Consultation
                   </Button>
                 </Link>
@@ -202,9 +202,9 @@ export default function CorporateBankAccount() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {banks.map((bank, index) => (
-                <Card key={index} className="border-gray-200 hover:border-[#D4A017] hover:shadow-lg transition-all">
+                <Card key={index} className="border-gray-200 hover:border-[#E56020] hover:shadow-lg transition-all">
                   <CardContent className="p-6">
-                    <Building className="w-10 h-10 text-[#D4A017] mb-4" />
+                    <Building className="w-10 h-10 text-[#E56020] mb-4" />
                     <h3 className="text-lg font-bold text-[#0A1A4A] mb-2">{bank.name}</h3>
                     <p className="text-gray-600 text-sm">{bank.features}</p>
                   </CardContent>
@@ -224,13 +224,13 @@ export default function CorporateBankAccount() {
               {accountTypes.map((account, index) => (
                 <Card key={index} className="border-2 border-gray-200">
                   <CardContent className="p-8">
-                    <CreditCard className="w-12 h-12 text-[#D4A017] mb-4" />
+                    <CreditCard className="w-12 h-12 text-[#E56020] mb-4" />
                     <h3 className="text-xl font-bold text-[#0A1A4A] mb-3">{account.title}</h3>
                     <p className="text-gray-600 mb-6">{account.description}</p>
                     <ul className="space-y-2">
                       {account.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start space-x-2">
-                          <CheckCircle2 className="w-5 h-5 text-[#D4A017] flex-shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-5 h-5 text-[#E56020] flex-shrink-0 mt-0.5" />
                           <span className="text-gray-700 text-sm">{feature}</span>
                         </li>
                       ))}
@@ -252,7 +252,7 @@ export default function CorporateBankAccount() {
               {benefits.map((benefit, index) => (
                 <Card key={index} className="border-2 border-gray-200">
                   <CardContent className="p-6 flex items-center space-x-4">
-                    <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
                     <span className="font-semibold text-[#0A1A4A]">{benefit}</span>
                   </CardContent>
                 </Card>
@@ -271,7 +271,7 @@ export default function CorporateBankAccount() {
               {process.map((item, index) => (
                 <div key={index} className="flex gap-6 mb-8 last:mb-0">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-[#D4A017] text-white rounded-full flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 bg-[#E56020] text-white rounded-full flex items-center justify-center font-bold text-lg">
                       {item.step}
                     </div>
                   </div>
@@ -295,7 +295,7 @@ export default function CorporateBankAccount() {
               {documents.map((doc, index) => (
                 <Card key={index} className="border-gray-200">
                   <CardContent className="p-4 flex items-center space-x-3">
-                    <FileText className="w-5 h-5 text-[#D4A017] flex-shrink-0" />
+                    <FileText className="w-5 h-5 text-[#E56020] flex-shrink-0" />
                     <span className="text-gray-700">{doc}</span>
                   </CardContent>
                 </Card>
@@ -326,7 +326,7 @@ export default function CorporateBankAccount() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-gradient-to-br from-[#D4A017] to-[#B8900F] text-white">
+        <section className="py-16 bg-gradient-to-br from-[#E56020] to-[#C4501A] text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Need Help Opening a Corporate Bank Account?
@@ -336,12 +336,12 @@ export default function CorporateBankAccount() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold">
+                <Button size="lg" className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold">
                   Schedule Consultation
                 </Button>
               </Link>
               <a href="https://wa.me/971523149927" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#D4A017]">
+                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#E56020]">
                   WhatsApp Us
                 </Button>
               </a>
