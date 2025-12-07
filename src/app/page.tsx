@@ -177,22 +177,22 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Start Your Business in <span className="text-[#D4A017]">Dubai</span> Today
+                  Start Your Business in <span className="text-[#E56020]">Dubai</span> Today
                 </h1>
                 <p className="text-xl md:text-2xl mb-8 text-gray-200">
                   Professional company formation services for mainland, freezone, and offshore business setup in UAE
                 </p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center space-x-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
                     <span className="text-lg">100% Foreign Ownership</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
                     <span className="text-lg">Fast 3-5 Day Setup</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
                     <span className="text-lg">Expert Visa & PRO Services</span>
                   </li>
                 </ul>
@@ -200,12 +200,12 @@ export default function Home() {
                   <Button 
                     size="lg" 
                     onClick={openPopup}
-                    className="bg-[#D4A017] hover:bg-[#B8900F] text-white font-semibold text-lg px-8 py-6"
+                    className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold text-lg px-8 py-6"
                   >
                     Get Free Consultation
                   </Button>
                   <Link href="/packages">
-                    <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#0A1A4A] font-semibold text-lg px-8 py-6">
+                    <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#0A1A4A] font-semibold text-lg px-8 py-6 w-full">
                       View Packages
                     </Button>
                   </Link>
@@ -231,7 +231,7 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-4xl md:text-5xl font-bold text-[#D4A017] mb-2">
+                  <div className="text-4xl md:text-5xl font-bold text-[#E56020] mb-2">
                     {stat.number}
                   </div>
                   <div className="text-gray-600 font-medium">{stat.label}</div>
@@ -256,8 +256,8 @@ export default function Home() {
               {benefits.map((benefit, index) => (
                 <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-6 text-center">
-                    <div className="bg-[#D4A017] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <benefit.icon className="w-8 h-8 text-[#D4A017]" />
+                    <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <benefit.icon className="w-8 h-8 text-[#E56020]" />
                     </div>
                     <h3 className="text-xl font-semibold text-[#0A1A4A] mb-3">
                       {benefit.title}
@@ -284,16 +284,16 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
                 <Link key={index} href={service.href}>
-                  <Card className="h-full border-2 border-gray-200 hover:border-[#D4A017] hover:shadow-xl transition-all cursor-pointer group">
+                  <Card className="h-full border-2 border-gray-200 hover:border-[#E56020] hover:shadow-xl transition-all cursor-pointer group">
                     <CardContent className="p-6">
-                      <div className="bg-gray-50 group-hover:bg-[#D4A017] group-hover:bg-opacity-10 w-14 h-14 rounded-lg flex items-center justify-center mb-4 transition-colors">
+                      <div className="bg-gray-50 group-hover:bg-[#E56020] group-hover:bg-opacity-10 w-14 h-14 rounded-lg flex items-center justify-center mb-4 transition-colors">
                         <service.icon className={`w-7 h-7 ${service.color} group-hover:scale-110 transition-transform`} />
                       </div>
                       <h3 className="text-lg font-semibold text-[#0A1A4A] mb-3">
                         {service.title}
                       </h3>
                       <p className="text-gray-600 text-sm mb-4">{service.description}</p>
-                      <span className="text-[#D4A017] font-semibold text-sm inline-flex items-center">
+                      <span className="text-[#E56020] font-semibold text-sm inline-flex items-center">
                         Learn More →
                       </span>
                     </CardContent>
@@ -324,21 +324,21 @@ export default function Home() {
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start space-x-3">
-                    <Shield className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                    <Shield className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Licensed & Authorized</h4>
                       <p className="text-gray-300">Registered business consultancy operating under UAE regulations</p>
                     </div>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                    <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Expert Team</h4>
                       <p className="text-gray-300">Experienced professionals with deep knowledge of UAE business laws</p>
                     </div>
                   </li>
                   <li className="flex items-start space-x-3">
-                    <TrendingUp className="w-6 h-6 text-[#D4A017] flex-shrink-0 mt-1" />
+                    <TrendingUp className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Transparent Pricing</h4>
                       <p className="text-gray-300">No hidden fees - clear pricing with detailed breakdown of all costs</p>
@@ -349,28 +349,28 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-6">
                 <Card className="bg-white bg-opacity-10 border-none backdrop-blur">
                   <CardContent className="p-6 text-center">
-                    <Award className="w-12 h-12 text-[#D4A017] mx-auto mb-3" />
+                    <Award className="w-12 h-12 text-[#E56020] mx-auto mb-3" />
                     <h4 className="font-semibold text-lg mb-2">Government Approved</h4>
                     <p className="text-gray-300 text-sm">Authorized business consultancy</p>
                   </CardContent>
                 </Card>
                 <Card className="bg-white bg-opacity-10 border-none backdrop-blur">
                   <CardContent className="p-6 text-center">
-                    <Star className="w-12 h-12 text-[#D4A017] mx-auto mb-3" />
+                    <Star className="w-12 h-12 text-[#E56020] mx-auto mb-3" />
                     <h4 className="font-semibold text-lg mb-2">5-Star Rated</h4>
                     <p className="text-gray-300 text-sm">Top-rated by our clients</p>
                   </CardContent>
                 </Card>
                 <Card className="bg-white bg-opacity-10 border-none backdrop-blur">
                   <CardContent className="p-6 text-center">
-                    <Clock className="w-12 h-12 text-[#D4A017] mx-auto mb-3" />
+                    <Clock className="w-12 h-12 text-[#E56020] mx-auto mb-3" />
                     <h4 className="font-semibold text-lg mb-2">Quick Processing</h4>
                     <p className="text-gray-300 text-sm">Fast license issuance</p>
                   </CardContent>
                 </Card>
                 <Card className="bg-white bg-opacity-10 border-none backdrop-blur">
                   <CardContent className="p-6 text-center">
-                    <CheckCircle2 className="w-12 h-12 text-[#D4A017] mx-auto mb-3" />
+                    <CheckCircle2 className="w-12 h-12 text-[#E56020] mx-auto mb-3" />
                     <h4 className="font-semibold text-lg mb-2">100% Success</h4>
                     <p className="text-gray-300 text-sm">Guaranteed approval</p>
                   </CardContent>
@@ -381,7 +381,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-[#D4A017]">
+        <section className="py-20 bg-[#E56020]">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to Start Your Business in Dubai?
@@ -393,12 +393,12 @@ export default function Home() {
               <Button 
                 size="lg" 
                 onClick={openPopup}
-                className="bg-white text-[#D4A017] hover:bg-gray-100 font-semibold text-lg px-8 py-6"
+                className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold text-lg px-8 py-6"
               >
                 Schedule Free Consultation
               </Button>
               <a href="tel:+971523149927">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#D4A017] font-semibold text-lg px-8 py-6">
+                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#E56020] font-semibold text-lg px-8 py-6">
                   Call +971 52 314 9927
                 </Button>
               </a>
