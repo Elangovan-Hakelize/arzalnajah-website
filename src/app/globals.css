@@ -53,7 +53,7 @@
 :root {
   --radius: 0.5rem;
   --brand-blue: #0A1A4A;
-  --brand-gold: #D4A017;
+  --brand-gold: #E56020;
   --background: #FFFFFF;
   --foreground: #0A1A4A;
   --card: #FFFFFF;
@@ -66,12 +66,12 @@
   --secondary-foreground: #0A1A4A;
   --muted: #F1F3F5;
   --muted-foreground: #6C757D;
-  --accent: #D4A017;
+  --accent: #E56020;
   --accent-foreground: #FFFFFF;
   --destructive: #DC3545;
   --border: #DEE2E6;
   --input: #DEE2E6;
-  --ring: #D4A017;
+  --ring: #E56020;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -94,18 +94,18 @@
   --card-foreground: #FFFFFF;
   --popover: #1A2A5A;
   --popover-foreground: #FFFFFF;
-  --primary: #D4A017;
-  --primary-foreground: #0A1A4A;
+  --primary: #E56020;
+  --primary-foreground: #FFFFFF;
   --secondary: #1A2A5A;
   --secondary-foreground: #FFFFFF;
   --muted: #1A2A5A;
   --muted-foreground: #ADB5BD;
-  --accent: #D4A017;
-  --accent-foreground: #0A1A4A;
+  --accent: #E56020;
+  --accent-foreground: #FFFFFF;
   --destructive: #DC3545;
   --border: #2A3A6A;
   --input: #2A3A6A;
-  --ring: #D4A017;
+  --ring: #E56020;
 }
 
 @layer base {
