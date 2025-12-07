@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext, useContext } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -13,8 +13,41 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-export const EnquiryPopup = () => {
+// Create context for managing popup state
+const EnquiryPopupContext = createContext<{
+  openPopup: () => void;
+} | null>(null);
+
+export const useEnquiryPopup = () => {
+  const context = useContext(EnquiryPopupContext);
+  if (!context) {
+    throw new Error("useEnquiryPopup must be used within EnquiryPopupProvider");
+  }
+  return context;
+};
+
+export const EnquiryPopupProvider = ({ children }: { children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsOpen(true);
+  };
+
+  return (
+    <EnquiryPopupContext.Provider value={{ openPopup }}>
+      {children}
+      <EnquiryPopupContent isOpen={isOpen} setIsOpen={setIsOpen} />
+    </EnquiryPopupContext.Provider>
+  );
+};
+
+const EnquiryPopupContent = ({ 
+  isOpen, 
+  setIsOpen 
+}: { 
+  isOpen: boolean; 
+  setIsOpen: (open: boolean) => void;
+}) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -38,7 +71,7 @@ export const EnquiryPopup = () => {
 
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [setIsOpen]);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -75,6 +108,7 @@ export const EnquiryPopup = () => {
         // Close popup after 3 seconds
         setTimeout(() => {
           setIsOpen(false);
+          setIsSubmitted(false);
         }, 3000);
       } else {
         alert("Failed to send enquiry. Please try again or contact us directly.");
@@ -236,3 +270,6 @@ export const EnquiryPopup = () => {
     </Dialog>
   );
 };
+
+// Keep backward compatibility - for pages that still use <EnquiryPopup />
+export const EnquiryPopup = EnquiryPopupContent;
