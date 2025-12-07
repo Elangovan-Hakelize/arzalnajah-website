@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
@@ -16,16 +15,16 @@ export default function Footer() {
               Your trusted partner for business setup and company formation services in Dubai and UAE.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-[#D4A017] transition-colors">
+              <a href="https://facebook.com/arzalnajah" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#D4A017] transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#D4A017] transition-colors">
+              <a href="https://instagram.com/arzalnajah" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#D4A017] transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#D4A017] transition-colors">
+              <a href="https://linkedin.com/company/arzalnajah" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#D4A017] transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#D4A017] transition-colors">
+              <a href="https://twitter.com/arzalnajah" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#D4A017] transition-colors" aria-label="Twitter">
                 <Twitter className="w-5 h-5" />
               </a>
             </div>
@@ -135,11 +134,21 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © 2025 ARZ Al Najah Business Setup Services. All rights reserved.
+              © {new Date().getFullYear()} ARZ Al Najah Business Setup Services. All rights reserved.
             </p>
-            <p className="text-gray-400 text-sm text-center md:text-right">
-              <strong>Disclaimer:</strong> We are a consultancy and not a government authority.
-            </p>
+            <div className="flex flex-wrap justify-center md:justify-end gap-4 text-sm">
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-[#D4A017] transition-colors">
+                Privacy Policy
+              </Link>
+              <span className="text-gray-600">•</span>
+              <Link href="/terms-conditions" className="text-gray-400 hover:text-[#D4A017] transition-colors">
+                Terms & Conditions
+              </Link>
+              <span className="text-gray-600">•</span>
+              <span className="text-gray-400">
+                <strong>Disclaimer:</strong> We are a consultancy, not a government authority.
+              </span>
+            </div>
           </div>
         </div>
       </div>
