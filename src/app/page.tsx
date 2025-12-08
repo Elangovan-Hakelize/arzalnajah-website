@@ -131,6 +131,7 @@ export default function Home() {
               "@type": "PostalAddress",
               "streetAddress": "Office No 806, 8th Floor, City Avenue Building, Port Saeed",
               "addressLocality": "Dubai",
+              "addressRegion": "Dubai",
               "postalCode": "",
               "addressCountry": "AE"
             },
@@ -155,7 +156,55 @@ export default function Home() {
               "@type": "Country",
               "name": "United Arab Emirates"
             },
-            "description": "Professional business setup and company formation services in Dubai & UAE. Mainland, Freezone, Offshore licenses, Visa services, and PRO assistance."
+            "description": "Professional business setup and company formation services in Dubai & UAE. Mainland, Freezone, Offshore licenses, Visa services, and PRO assistance.",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "500"
+            }
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "ARZ Al Najah Business Setup Services",
+            "description": "Expert business setup and company formation services in Dubai and UAE",
+            "url": "https://arzalnajah.com",
+            "telephone": "+971523149927",
+            "priceRange": "AED 5000 - AED 50000",
+            "areaServed": "United Arab Emirates",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Business Setup Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Mainland Company Setup Dubai"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Freezone Business Setup UAE"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Offshore Company Formation"
+                  }
+                }
+              ]
+            }
           })
         }}
       />
@@ -166,7 +215,7 @@ export default function Home() {
           <div className="absolute inset-0 opacity-10">
             <Image
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/32de8aa9-54b0-4fde-a2cf-914140afd64c/generated_images/professional-business-illustration-of-du-64c5fa6f-20251206082859.jpg"
-              alt="Dubai Business Setup"
+              alt="Dubai Business Setup - Professional company formation services in UAE"
               fill
               className="object-cover"
               priority
@@ -214,7 +263,7 @@ export default function Home() {
               <div className="hidden lg:block">
                 <Image
                   src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/32de8aa9-54b0-4fde-a2cf-914140afd64c/generated_images/isometric-3d-illustration-of-business-do-68f37e4f-20251206082859.jpg"
-                  alt="Business Setup Illustration"
+                  alt="Business Setup Illustration - Dubai company formation services"
                   width={600}
                   height={600}
                   className="rounded-lg shadow-2xl"
@@ -275,7 +324,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0A1A4A] mb-4">
-                Our Business Setup Services
+                Our Business Setup Services in Dubai
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Complete solutions for starting and growing your business in Dubai and UAE
