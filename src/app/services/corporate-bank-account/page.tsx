@@ -1,6 +1,8 @@
+'use client';
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { EnquiryPopup, useEnquiryPopup } from "@/components/EnquiryPopup";
 import { 
   Building, 
   CheckCircle2, 
@@ -9,15 +11,12 @@ import {
   Globe,
   Shield
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Corporate Bank Account Opening UAE | Business Banking - ARZ Al Najah",
-  description: "Expert assistance with corporate bank account opening in UAE. Work with top banks: Emirates NBD, ADCB, Mashreq, RAK Bank. Fast approval, dedicated support.",
-  keywords: "corporate bank account UAE, business bank account Dubai, UAE bank account opening, Emirates NBD account, company bank account setup",
-};
 
 export default function CorporateBankAccount() {
+
+  const { openPopup } = useEnquiryPopup();
+
   const banks = [
     { name: "Emirates NBD", features: "Leading UAE bank, extensive services" },
     { name: "Abu Dhabi Commercial Bank (ADCB)", features: "Competitive rates, digital banking" },
@@ -162,7 +161,7 @@ export default function CorporateBankAccount() {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
+        <section className="relative bg-gradient-to-br from-[#9c5a33] via-[#7a3e1f] to-[#3d1700] text-white py-15 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
               <div className="flex items-center space-x-2 text-[#E56020] mb-4">
@@ -185,7 +184,7 @@ export default function CorporateBankAccount() {
                   </Button>
                 </Link>
                 <Link href="/packages">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#0A1A4A]">
+                  <Button size="lg" variant="outline" className="border-white text-[#3d1700] hover:bg-white hover:text-[#3d1700]">
                     View Packages
                   </Button>
                 </Link>
@@ -197,7 +196,7 @@ export default function CorporateBankAccount() {
         {/* Partner Banks */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
+            <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
               Our Partner Banks
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -205,7 +204,7 @@ export default function CorporateBankAccount() {
                 <Card key={index} className="border-gray-200 hover:border-[#E56020] hover:shadow-lg transition-all">
                   <CardContent className="p-6">
                     <Building className="w-10 h-10 text-[#E56020] mb-4" />
-                    <h3 className="text-lg font-bold text-[#0A1A4A] mb-2">{bank.name}</h3>
+                    <h3 className="text-lg font-bold text-[#3d1700] mb-2">{bank.name}</h3>
                     <p className="text-gray-600 text-sm">{bank.features}</p>
                   </CardContent>
                 </Card>
@@ -217,7 +216,7 @@ export default function CorporateBankAccount() {
         {/* Account Types */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
+            <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
               Types of Business Accounts
             </h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -225,7 +224,7 @@ export default function CorporateBankAccount() {
                 <Card key={index} className="border-2 border-gray-200">
                   <CardContent className="p-8">
                     <CreditCard className="w-12 h-12 text-[#E56020] mb-4" />
-                    <h3 className="text-xl font-bold text-[#0A1A4A] mb-3">{account.title}</h3>
+                    <h3 className="text-xl font-bold text-[#3d1700] mb-3">{account.title}</h3>
                     <p className="text-gray-600 mb-6">{account.description}</p>
                     <ul className="space-y-2">
                       {account.features.map((feature, idx) => (
@@ -245,7 +244,7 @@ export default function CorporateBankAccount() {
         {/* Benefits Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
+            <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
               Banking Features & Benefits
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -253,7 +252,7 @@ export default function CorporateBankAccount() {
                 <Card key={index} className="border-2 border-gray-200">
                   <CardContent className="p-6 flex items-center space-x-4">
                     <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
-                    <span className="font-semibold text-[#0A1A4A]">{benefit}</span>
+                    <span className="font-semibold text-[#3d1700]">{benefit}</span>
                   </CardContent>
                 </Card>
               ))}
@@ -264,31 +263,53 @@ export default function CorporateBankAccount() {
         {/* Process Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
+            <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
               Account Opening Process
             </h2>
-            <div className="max-w-4xl mx-auto">
-              {process.map((item, index) => (
-                <div key={index} className="flex gap-6 mb-8 last:mb-0">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-[#E56020] text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      {item.step}
-                    </div>
-                  </div>
-                  <div className="flex-1 pb-8 border-l-2 border-gray-200 pl-6 -ml-6 last:border-l-0">
-                    <h3 className="text-xl font-bold text-[#0A1A4A] mb-2">{item.title}</h3>
-                    <p className="text-gray-600">{item.description}</p>
-                  </div>
-                </div>
-              ))}
+            {/* Timeline */}
+    <div className="relative max-w-7xl mx-auto">
+      
+      {/* Horizontal connector line (desktop only) */}
+      <div className="hidden md:block absolute top-[40px] left-0 right-0 h-[2px] bg-[#E56020]/30"></div>
+
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-10 md:gap-0">
+        {process.map((item, index) => (
+          <div key={index} className="flex flex-col items-center text-center relative">
+
+            {/* Circle */}
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full
+                            bg-gradient-to-tr from-[#E56020] to-[#F6A35C]
+                            flex items-center justify-center
+                            font-bold text-white text-lg md:text-xl
+                            shadow-xl z-10">
+              {item.step}
             </div>
+
+            {/* Mobile connector */}
+            {index < process.length - 1 && (
+              <div className="md:hidden w-[2px] h-8 bg-[#E56020]/40 mt-3 rounded-full"></div>
+            )}
+
+            {/* Text */}
+            <div className="mt-5 max-w-[180px]">
+              <h4 className="font-semibold text-[#3d1700] text-sm md:text-base mb-1">
+                {item.title}
+              </h4>
+              <p className="text-xs md:text-sm text-gray-600">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
           </div>
         </section>
 
         {/* Documents Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
+            <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
               Required Documents
             </h2>
             <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
@@ -304,26 +325,48 @@ export default function CorporateBankAccount() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
-              Frequently Asked Questions
-            </h2>
-            <div className="max-w-4xl mx-auto space-y-6">
-              {faqs.map((faq, index) => (
-                <Card key={index} className="border-gray-200">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold text-[#0A1A4A] mb-3">
-                      {faq.question}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+       
+       {/* FAQ Section */}
+<section className="py-16 bg-gray-50">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
+      Frequently Asked Questions
+    </h2>
+
+    <div className="max-w-4xl mx-auto space-y-4">
+      {faqs.map((faq, index) => (
+        <details
+          key={index}
+          className="group border border-gray-200 rounded-xl bg-white overflow-hidden"
+        >
+          {/* Question */}
+          <summary
+            className="flex justify-between items-center p-6 cursor-pointer
+                       text-[#3d1700] font-semibold text-lg
+                       list-none hover:bg-gray-50 transition"
+          >
+            <span>{faq.question}</span>
+
+            {/* Arrow */}
+            <span
+              className="ml-4 text-[#E56020] transition-transform duration-300
+                         group-open:rotate-180"
+            >
+              ▼
+            </span>
+          </summary>
+
+          {/* Answer */}
+          <div className="px-6 pb-6">
+            <p className="text-gray-600 leading-relaxed">
+              {faq.answer}
+            </p>
           </div>
-        </section>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-br from-[#E56020] to-[#C4501A] text-white">
@@ -335,13 +378,13 @@ export default function CorporateBankAccount() {
               Let our banking experts guide you through the account opening process
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg" className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold">
+            
+                <Button size="lg" onClick={openPopup} className="bg-white text-[#3d1700] hover:bg-gray-100 font-semibold">
                   Schedule Consultation
                 </Button>
-              </Link>
+              
               <a href="https://wa.me/971523149927" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#E56020]">
+                <Button size="lg" variant="outline" className="border-2 border-white text-[#3d1700] hover:bg-white hover:text-[#3d1700] font-semibold">
                   WhatsApp Us
                 </Button>
               </a>

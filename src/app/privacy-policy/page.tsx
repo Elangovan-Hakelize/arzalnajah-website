@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
+      <section className="relative bg-gradient-to-br from-[#9c5a33] via-[#7a3e1f] to-[#3d1700] text-white py-15 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
           <div className="max-w-4xl mx-auto prose prose-lg">
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">Introduction</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">Introduction</h2>
                 <p className="text-gray-700 leading-relaxed">
                   ARZ Al Najah Business Setup Services ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
                 </p>
@@ -52,11 +52,11 @@ export default function PrivacyPolicy() {
               <CardContent className="p-8">
                 <div className="flex items-center space-x-3 mb-4">
                   <Eye className="w-8 h-8 text-[#E56020]" />
-                  <h2 className="text-2xl font-bold text-[#0A1A4A]">Information We Collect</h2>
+                  <h2 className="text-2xl font-bold text-[#3d1700]">Information We Collect</h2>
                 </div>
                 <div className="space-y-4 text-gray-700">
                   <div>
-                    <h3 className="font-bold text-[#0A1A4A] mb-2">Personal Information</h3>
+                    <h3 className="font-bold text-[#3d1700] mb-2">Personal Information</h3>
                     <p className="leading-relaxed">
                       We collect personal information that you voluntarily provide to us when you:
                     </p>
@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
                   </div>
 
                   <div>
-                    <h3 className="font-bold text-[#0A1A4A] mb-2">Automatically Collected Information</h3>
+                    <h3 className="font-bold text-[#3d1700] mb-2">Automatically Collected Information</h3>
                     <p className="leading-relaxed">
                       When you visit our website, we automatically collect certain information about your device, including:
                     </p>
@@ -93,7 +93,7 @@ export default function PrivacyPolicy() {
               <CardContent className="p-8">
                 <div className="flex items-center space-x-3 mb-4">
                   <FileText className="w-8 h-8 text-[#E56020]" />
-                  <h2 className="text-2xl font-bold text-[#0A1A4A]">How We Use Your Information</h2>
+                  <h2 className="text-2xl font-bold text-[#3d1700]">How We Use Your Information</h2>
                 </div>
                 <div className="text-gray-700 space-y-3">
                   <p className="leading-relaxed">
@@ -117,7 +117,7 @@ export default function PrivacyPolicy() {
               <CardContent className="p-8">
                 <div className="flex items-center space-x-3 mb-4">
                   <Lock className="w-8 h-8 text-[#E56020]" />
-                  <h2 className="text-2xl font-bold text-[#0A1A4A]">Information Sharing and Disclosure</h2>
+                  <h2 className="text-2xl font-bold text-[#3d1700]">Information Sharing and Disclosure</h2>
                 </div>
                 <div className="text-gray-700 space-y-3">
                   <p className="leading-relaxed">
@@ -138,7 +138,7 @@ export default function PrivacyPolicy() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">Data Security</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">Data Security</h2>
                 <p className="text-gray-700 leading-relaxed">
                   We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
                 </p>
@@ -147,7 +147,7 @@ export default function PrivacyPolicy() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">Data Retention</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">Data Retention</h2>
                 <p className="text-gray-700 leading-relaxed">
                   We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. Business documentation may be retained for up to 7 years in accordance with UAE regulations.
                 </p>
@@ -156,7 +156,7 @@ export default function PrivacyPolicy() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">Your Rights</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">Your Rights</h2>
                 <div className="text-gray-700 space-y-3">
                   <p className="leading-relaxed">
                     You have the right to:
@@ -177,7 +177,7 @@ export default function PrivacyPolicy() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">Cookies and Tracking</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">Cookies and Tracking</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Our website uses cookies and similar tracking technologies to enhance your browsing experience, analyze website traffic, and understand user preferences. You can control cookie settings through your browser preferences. Disabling cookies may affect website functionality.
                 </p>
@@ -186,7 +186,7 @@ export default function PrivacyPolicy() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">Third-Party Links</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">Third-Party Links</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to review the privacy policies of any third-party sites you visit.
                 </p>
@@ -195,7 +195,7 @@ export default function PrivacyPolicy() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">Children's Privacy</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">Children's Privacy</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately.
                 </p>
@@ -204,7 +204,7 @@ export default function PrivacyPolicy() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">Changes to This Privacy Policy</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">Changes to This Privacy Policy</h2>
                 <p className="text-gray-700 leading-relaxed">
                   We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically for any changes.
                 </p>
@@ -213,7 +213,7 @@ export default function PrivacyPolicy() {
 
             <Card>
               <CardContent className="p-8 bg-gray-50">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">Contact Us</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">Contact Us</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:
                 </p>

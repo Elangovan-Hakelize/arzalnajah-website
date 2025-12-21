@@ -81,7 +81,7 @@ export default function InvestorVisaUAEGuide() {
             <span>/</span>
             <Link href="/blog" className="hover:text-[#E56020]">Blog</Link>
             <span>/</span>
-            <span className="text-[#0A1A4A]">Investor Visa UAE Guide</span>
+            <span className="text-[#3d1700]">Investor Visa UAE Guide</span>
           </div>
         </div>
       </section>
@@ -101,7 +101,7 @@ export default function InvestorVisaUAEGuide() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-[#0A1A4A] mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#3d1700] mb-6">
               How to Apply for an Investor Visa in UAE: Step-by-Step Guide
             </h1>
 
@@ -128,19 +128,19 @@ export default function InvestorVisaUAEGuide() {
                 The UAE investor visa (also known as investor residence visa) allows business owners and entrepreneurs to live and work in the United Arab Emirates. This comprehensive guide walks you through the complete application process for 2025.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 What is an Investor Visa?
               </h2>
               <p className="text-gray-700 mb-6">
                 An investor visa is a residence permit granted to individuals who own a business in the UAE. It typically comes with a 2-3 year validity and allows the holder to sponsor family members and employees. Unlike employment visas, investor visas give you the freedom to manage your own business without needing a local sponsor.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Eligibility Criteria
               </h2>
               <Card className="border-2 border-gray-200 mb-8">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#0A1A4A] mb-4">You Must:</h3>
+                  <h3 className="text-xl font-bold text-[#3d1700] mb-4">You Must:</h3>
                   <ul className="space-y-2">
                     {eligibility.map((item, index) => (
                       <li key={index} className="flex items-start space-x-2">
@@ -152,7 +152,7 @@ export default function InvestorVisaUAEGuide() {
                 </CardContent>
               </Card>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Required Documents
               </h2>
               <div className="grid md:grid-cols-2 gap-4 mb-8">
@@ -166,7 +166,7 @@ export default function InvestorVisaUAEGuide() {
                 ))}
               </div>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Application Process
               </h2>
               <div className="space-y-6 mb-8">
@@ -181,7 +181,7 @@ export default function InvestorVisaUAEGuide() {
                         </div>
                         <div className="flex-1">
                           <div className="flex items-center justify-between mb-2">
-                            <h3 className="text-xl font-bold text-[#0A1A4A]">{item.title}</h3>
+                            <h3 className="text-xl font-bold text-[#3d1700]">{item.title}</h3>
                             <span className="text-sm text-[#E56020] font-semibold">{item.duration}</span>
                           </div>
                           <p className="text-gray-600">{item.description}</p>
@@ -192,7 +192,7 @@ export default function InvestorVisaUAEGuide() {
                 ))}
               </div>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Costs Involved
               </h2>
               <Card className="border-2 border-[#E56020] mb-8">
@@ -200,37 +200,37 @@ export default function InvestorVisaUAEGuide() {
                   <div className="space-y-3">
                     <div className="flex justify-between items-center py-2">
                       <span className="text-gray-700">Entry Permit Fee</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 500</span>
+                      <span className="font-semibold text-[#3d1700]">AED 500</span>
                     </div>
                     <div className="flex justify-between items-center py-2">
                       <span className="text-gray-700">Medical Fitness Test</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 300</span>
+                      <span className="font-semibold text-[#3d1700]">AED 300</span>
                     </div>
                     <div className="flex justify-between items-center py-2">
                       <span className="text-gray-700">Emirates ID</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 370</span>
+                      <span className="font-semibold text-[#3d1700]">AED 370</span>
                     </div>
                     <div className="flex justify-between items-center py-2">
                       <span className="text-gray-700">Visa Stamping</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 500</span>
+                      <span className="font-semibold text-[#3d1700]">AED 500</span>
                     </div>
                     <div className="flex justify-between items-center py-2">
                       <span className="text-gray-700">Typing & Service Charges</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 500</span>
+                      <span className="font-semibold text-[#3d1700]">AED 500</span>
                     </div>
                     <div className="flex justify-between items-center py-2">
                       <span className="text-gray-700">Health Insurance (Annual)</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 1,500+</span>
+                      <span className="font-semibold text-[#3d1700]">AED 1,500+</span>
                     </div>
                     <div className="flex justify-between items-center pt-4 border-t-2 border-gray-200 font-bold text-lg">
-                      <span className="text-[#0A1A4A]">Total Approximate Cost:</span>
+                      <span className="text-[#3d1700]">Total Approximate Cost:</span>
                       <span className="text-[#E56020]">AED 3,500 - 5,000</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Processing Timeline
               </h2>
               <p className="text-gray-700 mb-4">
@@ -243,7 +243,7 @@ export default function InvestorVisaUAEGuide() {
                 <li>Emirates ID collection: 10-15 days (after application)</li>
               </ul>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Visa Validity and Renewal
               </h2>
               <p className="text-gray-700 mb-4">
@@ -253,14 +253,14 @@ export default function InvestorVisaUAEGuide() {
                 <strong>Important:</strong> Start the renewal process at least 30 days before expiry to avoid fines and complications.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Family Sponsorship
               </h2>
               <p className="text-gray-700 mb-8">
                 With an investor visa, you can sponsor your spouse, children, and parents (subject to minimum salary requirements). Each family member will need their own residence visa, medical test, and Emirates ID.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Common Mistakes to Avoid
               </h2>
               <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
@@ -271,7 +271,7 @@ export default function InvestorVisaUAEGuide() {
                 <li>Not updating visa status after company changes</li>
               </ul>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Why Use ARZ Al Najah for Your Investor Visa?
               </h2>
               <p className="text-gray-700 mb-8">
@@ -282,7 +282,7 @@ export default function InvestorVisaUAEGuide() {
             {/* CTA Card */}
             <Card className="border-2 border-[#E56020] mt-12">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">
+                <h3 className="text-2xl font-bold text-[#3d1700] mb-4">
                   Need Help with Your Investor Visa Application?
                 </h3>
                 <p className="text-gray-600 mb-6">

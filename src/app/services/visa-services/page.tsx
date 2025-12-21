@@ -1,6 +1,8 @@
+'use client';
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useEnquiryPopup } from "@/components/EnquiryPopup";
 import { 
   UserCheck, 
   CheckCircle2, 
@@ -9,15 +11,12 @@ import {
   Briefcase,
   Home
 } from "lucide-react";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "UAE Visa Services | Investor, Employment & Family Visa - ARZ Al Najah",
-  description: "Complete UAE visa services including investor visa, employment visa, family visa, and golden visa. Fast processing, expert guidance. From AED 3,000.",
-  keywords: "UAE visa services, investor visa Dubai, employment visa UAE, family visa Dubai, residence visa UAE, visa processing Dubai",
-};
 
 export default function VisaServices() {
+
+  const { openPopup } = useEnquiryPopup();
+
   const visaTypes = [
     {
       icon: Briefcase,
@@ -175,7 +174,7 @@ export default function VisaServices() {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
+        <section className="relative bg-gradient-to-br from-[#9c5a33] via-[#7a3e1f] to-[#3d1700] text-white py-15 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl">
               <div className="flex items-center space-x-2 text-[#E56020] mb-4">
@@ -198,7 +197,7 @@ export default function VisaServices() {
                   </Button>
                 </Link>
                 <Link href="/packages">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#0A1A4A]">
+                  <Button size="lg" variant="outline" className="border-white text-[#3d1700] hover:bg-white hover:text-[#3d1700]">
                     View Packages
                   </Button>
                 </Link>
@@ -210,7 +209,7 @@ export default function VisaServices() {
         {/* Visa Types Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
+            <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
               Our Visa Services
             </h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -218,9 +217,9 @@ export default function VisaServices() {
                 <Card key={index} className="border-2 border-gray-200 hover:border-[#E56020] hover:shadow-xl transition-all">
                   <CardContent className="p-8">
                     <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                      <visa.icon className="w-8 h-8 text-[#E56020]" />
+                      <visa.icon className="w-8 h-8 text-[#ffff]" />
                     </div>
-                    <h3 className="text-2xl font-bold text-[#0A1A4A] mb-3">{visa.title}</h3>
+                    <h3 className="text-2xl font-bold text-[#3d1700] mb-3">{visa.title}</h3>
                     <p className="text-gray-600 mb-4">{visa.description}</p>
                     <div className="flex justify-between items-center mb-6 pb-6 border-b">
                       <div>
@@ -229,7 +228,7 @@ export default function VisaServices() {
                       </div>
                       <div className="text-right">
                         <div className="text-sm text-gray-500">Validity</div>
-                        <div className="text-lg font-semibold text-[#0A1A4A]">{visa.validity}</div>
+                        <div className="text-lg font-semibold text-[#3d1700]">{visa.validity}</div>
                       </div>
                     </div>
                     <ul className="space-y-3 mb-6">
@@ -241,7 +240,7 @@ export default function VisaServices() {
                       ))}
                     </ul>
                     <Link href="/contact">
-                      <Button className="w-full bg-[#0A1A4A] hover:bg-[#0D2158] text-white">
+                      <Button className="w-full bg-[#3d1700] hover:bg-[#3d1700] text-white">
                         Apply Now
                       </Button>
                     </Link>
@@ -255,36 +254,58 @@ export default function VisaServices() {
         {/* Process Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
+            <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
               Visa Processing Steps
             </h2>
-            <div className="max-w-4xl mx-auto">
-              {process.map((item, index) => (
-                <div key={index} className="flex gap-6 mb-8 last:mb-0">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-[#E56020] text-white rounded-full flex items-center justify-center font-bold text-lg">
-                      {item.step}
-                    </div>
-                  </div>
-                  <div className="flex-1 pb-8 border-l-2 border-gray-200 pl-6 -ml-6 last:border-l-0">
-                    <h3 className="text-xl font-bold text-[#0A1A4A] mb-2">{item.title}</h3>
-                    <p className="text-gray-600">{item.description}</p>
-                  </div>
-                </div>
-              ))}
+            {/* Timeline */}
+    <div className="relative max-w-7xl mx-auto">
+      
+      {/* Horizontal connector line (desktop only) */}
+      <div className="hidden md:block absolute top-[40px] left-0 right-0 h-[2px] bg-[#E56020]/30"></div>
+
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-10 md:gap-0">
+        {process.map((item, index) => (
+          <div key={index} className="flex flex-col items-center text-center relative">
+
+            {/* Circle */}
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full
+                            bg-gradient-to-tr from-[#E56020] to-[#F6A35C]
+                            flex items-center justify-center
+                            font-bold text-white text-lg md:text-xl
+                            shadow-xl z-10">
+              {item.step}
             </div>
+
+            {/* Mobile connector */}
+            {index < process.length - 1 && (
+              <div className="md:hidden w-[2px] h-8 bg-[#E56020]/40 mt-3 rounded-full"></div>
+            )}
+
+            {/* Text */}
+            <div className="mt-5 max-w-[180px]">
+              <h4 className="font-semibold text-[#3d1700] text-sm md:text-base mb-1">
+                {item.title}
+              </h4>
+              <p className="text-xs md:text-sm text-gray-600">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
           </div>
         </section>
 
         {/* Documents Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
+            <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
               Required Documents
             </h2>
             <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <div>
-                <h3 className="text-xl font-bold text-[#0A1A4A] mb-6 flex items-center">
+                <h3 className="text-xl font-bold text-[#3d1700] mb-6 flex items-center">
                   <Briefcase className="w-6 h-6 text-[#E56020] mr-2" />
                   Investor Visa
                 </h3>
@@ -300,7 +321,7 @@ export default function VisaServices() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[#0A1A4A] mb-6 flex items-center">
+                <h3 className="text-xl font-bold text-[#3d1700] mb-6 flex items-center">
                   <Users className="w-6 h-6 text-[#E56020] mr-2" />
                   Employment Visa
                 </h3>
@@ -316,7 +337,7 @@ export default function VisaServices() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-[#0A1A4A] mb-6 flex items-center">
+                <h3 className="text-xl font-bold text-[#3d1700] mb-6 flex items-center">
                   <Home className="w-6 h-6 text-[#E56020] mr-2" />
                   Family Visa
                 </h3>
@@ -336,25 +357,47 @@ export default function VisaServices() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
-              Frequently Asked Questions
-            </h2>
-            <div className="max-w-4xl mx-auto space-y-6">
-              {faqs.map((faq, index) => (
-                <Card key={index} className="border-gray-200">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold text-[#0A1A4A] mb-3">
-                      {faq.question}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+<section className="py-16 bg-gray-50">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
+      Frequently Asked Questions
+    </h2>
+
+    <div className="max-w-4xl mx-auto space-y-4">
+      {faqs.map((faq, index) => (
+        <details
+          key={index}
+          className="group border border-gray-200 rounded-xl bg-white overflow-hidden"
+        >
+          {/* Question */}
+          <summary
+            className="flex justify-between items-center p-6 cursor-pointer
+                       text-[#3d1700] font-semibold text-lg
+                       list-none hover:bg-gray-50 transition"
+          >
+            <span>{faq.question}</span>
+
+            {/* Arrow */}
+            <span
+              className="ml-4 text-[#E56020] transition-transform duration-300
+                         group-open:rotate-180"
+            >
+              ▼
+            </span>
+          </summary>
+
+          {/* Answer */}
+          <div className="px-6 pb-6">
+            <p className="text-gray-600 leading-relaxed">
+              {faq.answer}
+            </p>
           </div>
-        </section>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
 
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-br from-[#E56020] to-[#C4501A] text-white">
@@ -366,14 +409,14 @@ export default function VisaServices() {
               Let our visa experts handle your application for fast and hassle-free processing
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg" className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold">
+             
+                <Button size="lg" onClick={openPopup} className="bg-white text-[#3d1700] hover:bg-gray-100 font-semibold">
                   Schedule Consultation
                 </Button>
-              </Link>
+             
               <a href="https://wa.me/971523149927" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#E56020]">
-                  WhatsApp Us
+                <Button size="lg" variant="outline" className="border-2 border-white text-[#3d1700] hover:bg-white hover:text-[#3d1700]">
+                  Whatsapp Us
                 </Button>
               </a>
             </div>

@@ -4,7 +4,7 @@ import { useState, useEffect, createContext, useContext } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { X, Send, CheckCircle2, Loader2 } from "lucide-react";
+import { Send, CheckCircle2, Loader2, ChevronDown } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -13,7 +13,39 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-// Create context for managing popup state
+const countryCodes = [
+  { code: "+971", country: "UAE", flag: "🇦🇪" },
+  { code: "+1", country: "USA", flag: "🇺🇸" },
+  { code: "+44", country: "UK", flag: "🇬🇧" },
+  { code: "+91", country: "India", flag: "🇮🇳" },
+  { code: "+92", country: "Pakistan", flag: "🇵🇰" },
+  { code: "+966", country: "Saudi Arabia", flag: "🇸🇦" },
+  { code: "+974", country: "Qatar", flag: "🇶🇦" },
+  { code: "+973", country: "Bahrain", flag: "🇧🇭" },
+  { code: "+968", country: "Oman", flag: "🇴🇲" },
+  { code: "+965", country: "Kuwait", flag: "🇰🇼" },
+  { code: "+20", country: "Egypt", flag: "🇪🇬" },
+  { code: "+27", country: "South Africa", flag: "🇿🇦" },
+  { code: "+49", country: "Germany", flag: "🇩🇪" },
+  { code: "+33", country: "France", flag: "🇫🇷" },
+  { code: "+86", country: "China", flag: "🇨🇳" },
+  { code: "+81", country: "Japan", flag: "🇯🇵" },
+  { code: "+82", country: "South Korea", flag: "🇰🇷" },
+  { code: "+61", country: "Australia", flag: "🇦🇺" },
+  { code: "+7", country: "Russia", flag: "🇷🇺" },
+  { code: "+55", country: "Brazil", flag: "🇧🇷" },
+  { code: "+52", country: "Mexico", flag: "🇲🇽" },
+  { code: "+39", country: "Italy", flag: "🇮🇹" },
+  { code: "+34", country: "Spain", flag: "🇪🇸" },
+  { code: "+31", country: "Netherlands", flag: "🇳🇱" },
+  { code: "+90", country: "Turkey", flag: "🇹🇷" },
+  { code: "+62", country: "Indonesia", flag: "🇮🇩" },
+  { code: "+60", country: "Malaysia", flag: "🇲🇾" },
+  { code: "+65", country: "Singapore", flag: "🇸🇬" },
+  { code: "+63", country: "Philippines", flag: "🇵🇭" },
+  { code: "+234", country: "Nigeria", flag: "🇳🇬" },
+];
+
 const EnquiryPopupContext = createContext<{
   openPopup: () => void;
 } | null>(null);
@@ -50,6 +82,8 @@ const EnquiryPopupContent = ({
 }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [countryCodeOpen, setCountryCodeOpen] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState(countryCodes[0]);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -59,11 +93,9 @@ const EnquiryPopupContent = ({
   });
 
   useEffect(() => {
-    // Check if popup has been shown in this session
     const hasShownPopup = sessionStorage.getItem("enquiryPopupShown");
     
     if (!hasShownPopup) {
-      // Show popup after 5 seconds
       const timer = setTimeout(() => {
         setIsOpen(true);
         sessionStorage.setItem("enquiryPopupShown", "true");
@@ -87,12 +119,13 @@ const EnquiryPopupContent = ({
     setIsSubmitting(true);
 
     try {
+      const fullPhone = `${selectedCountry.code} ${formData.phone}`;
       const response = await fetch("/api/enquiry", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, phone: fullPhone }),
       });
 
       if (response.ok) {
@@ -105,7 +138,6 @@ const EnquiryPopupContent = ({
           message: "",
         });
         
-        // Close popup after 3 seconds
         setTimeout(() => {
           setIsOpen(false);
           setIsSubmitted(false);
@@ -137,8 +169,8 @@ const EnquiryPopupContent = ({
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className="sm:max-w-[500px] max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-[#0A1A4A]">
-            🎯 Start Your Dubai Business Today!
+          <DialogTitle className="text-2xl font-bold text-[#3d1700]">
+            Start Your Dubai Business Today!
           </DialogTitle>
           <DialogDescription className="text-gray-600">
             Get a <span className="font-semibold text-[#E56020]">FREE consultation</span> with our business setup experts. Fill in your details below.
@@ -195,16 +227,48 @@ const EnquiryPopupContent = ({
               <label htmlFor="popup-phone" className="block text-sm font-medium text-gray-700 mb-1">
                 Phone Number *
               </label>
-              <Input
-                id="popup-phone"
-                name="phone"
-                type="tel"
-                required
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="+971 XX XXX XXXX"
-                className="w-full"
-              />
+              <div className="flex gap-2">
+                <div className="relative">
+                  <button
+                    type="button"
+                    onClick={() => setCountryCodeOpen(!countryCodeOpen)}
+                    className="flex items-center gap-1 px-3 py-2 border border-gray-300 rounded-md bg-white hover:bg-gray-50 min-w-[100px] text-sm"
+                  >
+                    <span className="text-lg">{selectedCountry.flag}</span>
+                    <span>{selectedCountry.code}</span>
+                    <ChevronDown className="w-4 h-4 ml-auto" />
+                  </button>
+                  {countryCodeOpen && (
+                    <div className="absolute z-50 mt-1 w-56 max-h-60 overflow-y-auto bg-white border border-gray-200 rounded-md shadow-lg">
+                      {countryCodes.map((country) => (
+                        <button
+                          key={country.code}
+                          type="button"
+                          onClick={() => {
+                            setSelectedCountry(country);
+                            setCountryCodeOpen(false);
+                          }}
+                          className="w-full flex items-center gap-2 px-3 py-2 hover:bg-gray-100 text-left text-sm"
+                        >
+                          <span className="text-lg">{country.flag}</span>
+                          <span className="font-medium">{country.code}</span>
+                          <span className="text-gray-500">{country.country}</span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <Input
+                  id="popup-phone"
+                  name="phone"
+                  type="tel"
+                  required
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="XX XXX XXXX"
+                  className="flex-1"
+                />
+              </div>
             </div>
 
             <div>
@@ -262,7 +326,7 @@ const EnquiryPopupContent = ({
             </Button>
 
             <p className="text-xs text-center text-gray-500">
-              🔒 Your information is secure and will never be shared
+              Your information is secure and will never be shared
             </p>
           </form>
         )}
@@ -271,5 +335,4 @@ const EnquiryPopupContent = ({
   );
 };
 
-// Keep backward compatibility - for pages that still use <EnquiryPopup />
 export const EnquiryPopup = EnquiryPopupContent;

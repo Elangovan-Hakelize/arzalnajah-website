@@ -64,7 +64,7 @@ export default function MainlandVsFreezoneComparison() {
             <span>/</span>
             <Link href="/blog" className="hover:text-[#E56020]">Blog</Link>
             <span>/</span>
-            <span className="text-[#0A1A4A]">Mainland vs Freezone Comparison</span>
+            <span className="text-[#3d1700]">Mainland vs Freezone Comparison</span>
           </div>
         </div>
       </section>
@@ -84,7 +84,7 @@ export default function MainlandVsFreezoneComparison() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-[#0A1A4A] mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#3d1700] mb-6">
               Mainland vs Freezone Company Setup: Which is Better for Your Business?
             </h1>
 
@@ -111,14 +111,14 @@ export default function MainlandVsFreezoneComparison() {
                 One of the most important decisions when starting a business in Dubai is choosing between mainland and freezone company setup. Each option has distinct advantages and limitations. This comprehensive guide will help you make an informed decision.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Quick Comparison Table
               </h2>
 
               <div className="overflow-x-auto mb-8">
                 <table className="w-full border-collapse">
                   <thead>
-                    <tr className="bg-[#0A1A4A] text-white">
+                    <tr className="bg-[#3d1700] text-white">
                       <th className="p-4 text-left">Feature</th>
                       <th className="p-4 text-left">Mainland</th>
                       <th className="p-4 text-left">Freezone</th>
@@ -127,7 +127,7 @@ export default function MainlandVsFreezoneComparison() {
                   <tbody>
                     {comparisonData.map((row, index) => (
                       <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
-                        <td className="p-4 font-semibold text-[#0A1A4A]">{row.feature}</td>
+                        <td className="p-4 font-semibold text-[#3d1700]">{row.feature}</td>
                         <td className="p-4 text-gray-700">{row.mainland}</td>
                         <td className="p-4 text-gray-700">{row.freezone}</td>
                       </tr>
@@ -136,13 +136,13 @@ export default function MainlandVsFreezoneComparison() {
                 </table>
               </div>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Mainland Company Setup: Pros & Cons
               </h2>
 
               <Card className="border-2 border-green-200 bg-green-50 mb-6">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#0A1A4A] mb-4 flex items-center">
+                  <h3 className="text-xl font-bold text-[#3d1700] mb-4 flex items-center">
                     <CheckCircle2 className="w-6 h-6 text-green-600 mr-2" />
                     Advantages
                   </h3>
@@ -173,7 +173,7 @@ export default function MainlandVsFreezoneComparison() {
 
               <Card className="border-2 border-red-200 bg-red-50 mb-8">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#0A1A4A] mb-4 flex items-center">
+                  <h3 className="text-xl font-bold text-[#3d1700] mb-4 flex items-center">
                     <XCircle className="w-6 h-6 text-red-600 mr-2" />
                     Disadvantages
                   </h3>
@@ -198,13 +198,13 @@ export default function MainlandVsFreezoneComparison() {
                 </CardContent>
               </Card>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Freezone Company Setup: Pros & Cons
               </h2>
 
               <Card className="border-2 border-green-200 bg-green-50 mb-6">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#0A1A4A] mb-4 flex items-center">
+                  <h3 className="text-xl font-bold text-[#3d1700] mb-4 flex items-center">
                     <CheckCircle2 className="w-6 h-6 text-green-600 mr-2" />
                     Advantages
                   </h3>
@@ -239,7 +239,7 @@ export default function MainlandVsFreezoneComparison() {
 
               <Card className="border-2 border-red-200 bg-red-50 mb-8">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#0A1A4A] mb-4 flex items-center">
+                  <h3 className="text-xl font-bold text-[#3d1700] mb-4 flex items-center">
                     <XCircle className="w-6 h-6 text-red-600 mr-2" />
                     Disadvantages
                   </h3>
@@ -264,11 +264,11 @@ export default function MainlandVsFreezoneComparison() {
                 </CardContent>
               </Card>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Which Option is Right for You?
               </h2>
 
-              <h3 className="text-2xl font-bold text-[#0A1A4A] mt-8 mb-4">
+              <h3 className="text-2xl font-bold text-[#3d1700] mt-8 mb-4">
                 Choose Mainland If:
               </h3>
               <ul className="space-y-2 mb-6">
@@ -279,7 +279,7 @@ export default function MainlandVsFreezoneComparison() {
                 <li>✅ Your industry requires mainland presence (construction, retail stores, etc.)</li>
               </ul>
 
-              <h3 className="text-2xl font-bold text-[#0A1A4A] mt-8 mb-4">
+              <h3 className="text-2xl font-bold text-[#3d1700] mt-8 mb-4">
                 Choose Freezone If:
               </h3>
               <ul className="space-y-2 mb-8">
@@ -291,14 +291,14 @@ export default function MainlandVsFreezoneComparison() {
                 <li>✅ You're a startup or freelancer</li>
               </ul>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Can You Have Both?
               </h2>
               <p className="text-gray-700 mb-8">
                 Yes! Many businesses start with a freezone company and later establish a mainland presence as they grow. This hybrid approach allows you to benefit from freezone advantages while gradually expanding into the local market. Some businesses also operate both simultaneously - using the freezone entity for international operations and the mainland company for local trade.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Conclusion
               </h2>
               <p className="text-gray-700 mb-8">
@@ -309,7 +309,7 @@ export default function MainlandVsFreezoneComparison() {
             {/* CTA Card */}
             <Card className="border-2 border-[#E56020] mt-12">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">
+                <h3 className="text-2xl font-bold text-[#3d1700] mb-4">
                   Not Sure Which Option is Best for You?
                 </h3>
                 <p className="text-gray-600 mb-6">

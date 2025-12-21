@@ -27,24 +27,31 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-[#0A1A4A]">
-              <span className="text-[#E56020]">ARZ</span> Al Najah
-            </div>
-          </Link>
+<Link href="/" className="flex items-center space-x-2">
+  <img 
+    src="/logo.png"   // adjust the path to where your image is stored
+    alt="ARZ Al Najah Logo"
+    className="w-12 h-12 object-contain"
+  />
+
+  <div className="text-2xl font-bold text-[#3d1700]">
+    Al Najah
+  </div>
+</Link>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="/" className="text-[#0A1A4A] hover:text-[#E56020] font-medium transition-colors">
+            <Link href="/" className="text-[#3d1700] hover:text-[#E56020] font-medium transition-colors">
               Home
             </Link>
-            <Link href="/about" className="text-[#0A1A4A] hover:text-[#E56020] font-medium transition-colors">
+            <Link href="/about" className="text-[#3d1700] hover:text-[#E56020] font-medium transition-colors">
               About
             </Link>
             
             {/* Services Dropdown */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-[#0A1A4A] hover:text-[#E56020] font-medium transition-colors">
+              <button className="flex items-center space-x-1 text-[#3d1700] hover:text-[#E56020] font-medium transition-colors">
                 <span>Services</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -54,7 +61,7 @@ export default function Header() {
                     <Link
                       key={service.href}
                       href={service.href}
-                      className="block px-4 py-2 text-sm text-[#0A1A4A] hover:bg-[#F8F9FA] hover:text-[#E56020] transition-colors"
+                      className="block px-4 py-2 text-sm text-[#3d1700] hover:bg-[#F8F9FA] hover:text-[#E56020] transition-colors"
                     >
                       {service.name}
                     </Link>
@@ -63,23 +70,23 @@ export default function Header() {
               </div>
             </div>
 
-            <Link href="/packages" className="text-[#0A1A4A] hover:text-[#E56020] font-medium transition-colors">
+            <Link href="/packages" className="text-[#3d1700] hover:text-[#E56020] font-medium transition-colors">
               Packages
             </Link>
-            <Link href="/blog" className="text-[#0A1A4A] hover:text-[#E56020] font-medium transition-colors">
+            <Link href="/blog" className="text-[#3d1700] hover:text-[#E56020] font-medium transition-colors">
               Blog
             </Link>
-            <Link href="/testimonials" className="text-[#0A1A4A] hover:text-[#E56020] font-medium transition-colors">
+            <Link href="/testimonials" className="text-[#3d1700] hover:text-[#E56020] font-medium transition-colors">
               Testimonials
             </Link>
-            <Link href="/contact" className="text-[#0A1A4A] hover:text-[#E56020] font-medium transition-colors">
+            <Link href="/contact" className="text-[#3d1700] hover:text-[#E56020] font-medium transition-colors">
               Contact
             </Link>
           </nav>
 
           {/* Contact CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:+971523149927" className="flex items-center space-x-2 text-[#0A1A4A] hover:text-[#E56020] transition-colors">
+            <a href="tel:+971523149927" className="flex items-center space-x-2 text-[#3d1700] hover:text-[#E56020] transition-colors">
               <Phone className="w-4 h-4" />
               <span className="font-semibold">+971 52 314 9927</span>
             </a>
@@ -93,7 +100,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-[#0A1A4A]"
+            className="lg:hidden text-[#3d1700]"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -104,10 +111,10 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-gray-200 py-4">
             <nav className="flex flex-col space-y-4">
-              <Link href="/" className="text-[#0A1A4A] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/" className="text-[#3d1700] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Home
               </Link>
-              <Link href="/about" className="text-[#0A1A4A] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/about" className="text-[#3d1700] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
                 About
               </Link>
               
@@ -115,7 +122,7 @@ export default function Header() {
               <div>
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
-                  className="flex items-center space-x-1 text-[#0A1A4A] hover:text-[#E56020] font-medium w-full"
+                  className="flex items-center space-x-1 text-[#3d1700] hover:text-[#E56020] font-medium w-full"
                 >
                   <span>Services</span>
                   <ChevronDown className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
@@ -126,7 +133,7 @@ export default function Header() {
                       <Link
                         key={service.href}
                         href={service.href}
-                        className="block text-sm text-[#0A1A4A] hover:text-[#E56020]"
+                        className="block text-sm text-[#3d1700] hover:text-[#E56020]"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {service.name}
@@ -136,20 +143,20 @@ export default function Header() {
                 )}
               </div>
 
-              <Link href="/packages" className="text-[#0A1A4A] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/packages" className="text-[#3d1700] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Packages
               </Link>
-              <Link href="/blog" className="text-[#0A1A4A] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/blog" className="text-[#3d1700] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Blog
               </Link>
-              <Link href="/testimonials" className="text-[#0A1A4A] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/testimonials" className="text-[#3d1700] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Testimonials
               </Link>
-              <Link href="/contact" className="text-[#0A1A4A] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/contact" className="text-[#3d1700] hover:text-[#E56020] font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Contact
               </Link>
               
-              <a href="tel:+971523149927" className="flex items-center space-x-2 text-[#0A1A4A] pt-4 border-t">
+              <a href="tel:+971523149927" className="flex items-center space-x-2 text-[#3d1700] pt-4 border-t">
                 <Phone className="w-4 h-4" />
                 <span className="font-semibold">+971 52 314 9927</span>
               </a>

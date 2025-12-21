@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,7 +18,9 @@ import {
   Shield,
   TrendingUp,
   CheckCircle2,
-  Star
+  Star,
+  FileText,
+  CreditCard
 } from "lucide-react";
 
 export default function Home() {
@@ -67,7 +70,7 @@ export default function Home() {
       color: "text-indigo-600"
     },
     {
-      icon: Award,
+      icon: FileText,
       title: "Trade License Services",
       description: "Complete trade license processing, renewal, and amendment services for your business.",
       href: "/services/trade-license-services",
@@ -109,12 +112,20 @@ export default function Home() {
     { number: "500+", label: "Companies Formed" },
     { number: "15+", label: "Years Experience" },
     { number: "98%", label: "Client Satisfaction" },
-    { number: "24/7", label: "Customer Support" },
+    { number: "24/7", label: "Customer Chat Support" },
+  ];
+
+  const processSteps = [
+    { step: 1, title: "Consultation", description: "Free expert consultation" },
+    { step: 2, title: "Documentation", description: "Prepare required documents" },
+    { step: 3, title: "Submission", description: "Submit to the authorities" },
+    { step: 4, title: "Approval", description: "Receive license approval" },
+    { step: 5, title: "Visa Processing", description: "Process investor visas" },
+    { step: 6, title: "Bank Account", description: "Open corporate account" },
   ];
 
   return (
     <>
-      {/* Schema Markup for SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -166,116 +177,91 @@ export default function Home() {
         }}
       />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            "name": "ARZ Al Najah Business Setup Services",
-            "description": "Expert business setup and company formation services in Dubai and UAE",
-            "url": "https://arzalnajah.com",
-            "telephone": "+971523149927",
-            "priceRange": "AED 5000 - AED 50000",
-            "areaServed": "United Arab Emirates",
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Business Setup Services",
-              "itemListElement": [
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Mainland Company Setup Dubai"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Freezone Business Setup UAE"
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Offshore Company Formation"
-                  }
-                }
-              ]
-            }
-          })
-        }}
-      />
-
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-[#0A1A4A] via-[#0D2158] to-[#0A1A4A] text-white py-20 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/32de8aa9-54b0-4fde-a2cf-914140afd64c/generated_images/professional-business-illustration-of-du-64c5fa6f-20251206082859.jpg"
-              alt="Dubai Business Setup - Professional company formation services in UAE"
-              fill
-              className="object-cover"
-              priority
+<section className="relative bg-gradient-to-br from-[#9c5a33] via-[#7a3e1f] to-[#3d1700] text-white py-15 overflow-hidden">
+  {/* background image (subtle, full cover) */}
+  <div className="absolute inset-0 pointer-events-none">
+    <img
+      src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80"               // put your big bg image in public/images/hero-bg.jpg
+      alt="Dubai skyline background"
+      className="w-full h-full object-cover opacity-10"
+      loading="lazy"
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#3d1700]/40" />
+  </div>
+
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="grid lg:grid-cols-2 gap-8 items-center">
+      {/* Left: Text */}
+      <div className="pr-0 lg:pr-8 pl-0 md:pl-12 lg:pl-[60px]">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          Start Your Business in <span className="text-[#E56020]">Dubai</span> Today
+        </h1>
+        <p className="text-lg md:text-xl mb-6 text-gray-200 max-w-2xl">
+          Your trusted partner for fast and reliable Mainland, Freezone, and Offshore company formation services in Dubai and across the UAE.
+        </p>
+
+        <ul className="space-y-3 mb-8 max-w-md">
+          <li className="flex items-center space-x-3">
+            <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
+            <span className="text-lg">Mainland, Freezone & Offshore Company Formation</span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
+            <span className="text-lg">PRO & Visa Processing</span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
+            <span className="text-lg">Trade License Acquisition</span>
+          </li>
+          <li className="flex items-center space-x-3">
+            <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
+            <span className="text-lg">Bank Account Assistance</span>
+          </li>
+        </ul>
+
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button
+            size="lg"
+            onClick={openPopup}
+            className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold text-lg px-8 py-4"
+          >
+            Get Free Consultation
+          </Button>
+
+          <Link href="/packages" className="w-full sm:w-auto">
+            <Button size="lg" variant="outline" className="border-2 border-white text-[#3d1700] hover:bg-white hover:text-[#3d1700] font-semibold text-lg px-8 py-4">
+              View Packages
+            </Button>
+          </Link>
+        </div>
+      </div>
+
+      {/* Right: Framed hero image (responsive + overlap) */}
+      <div className="flex justify-center items-center">
+        <div className="w-full max-w-md lg:max-w-lg transform lg:translate-x-6">
+          <div className="relative rounded-2xl shadow-2xl overflow-hidden border border-white/10">
+            <img
+              src="https://images.unsplash.com/photo-1681505504714-4ded1bc247e7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=800&q=80"    // put your hero image in public/images/hero-right.jpg
+              alt="Business Setup Illustration - Dubai company formation services"
+              className="w-full h-[320px] md:h-[420px] lg:h-[500px] object-cover"
+              loading="lazy"
             />
+            {/* subtle inner overlay for contrast */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           </div>
-          
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Start Your Business in <span className="text-[#E56020]">Dubai</span> Today
-                </h1>
-                <p className="text-xl md:text-2xl mb-8 text-gray-200">
-                  Professional company formation services for mainland, freezone, and offshore business setup in UAE
-                </p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
-                    <span className="text-lg">100% Foreign Ownership</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
-                    <span className="text-lg">Fast 3-5 Day Setup</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0" />
-                    <span className="text-lg">Expert Visa & PRO Services</span>
-                  </li>
-                </ul>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
-                    size="lg" 
-                    onClick={openPopup}
-                    className="bg-[#E56020] hover:bg-[#C4501A] text-white font-semibold text-lg px-8 py-6"
-                  >
-                    Get Free Consultation
-                  </Button>
-                  <Link href="/packages">
-                    <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#0A1A4A] font-semibold text-lg px-8 py-6 w-full">
-                      View Packages
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              <div className="hidden lg:block">
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/32de8aa9-54b0-4fde-a2cf-914140afd64c/generated_images/isometric-3d-illustration-of-business-do-68f37e4f-20251206082859.jpg"
-                  alt="Business Setup Illustration - Dubai company formation services"
-                  width={600}
-                  height={600}
-                  className="rounded-lg shadow-2xl"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+          {/* optional small decorative footer bar to match brand */}
+          <div className="mt-4 h-1 w-28 bg-[#E56020] rounded-full" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Stats Section */}
-        <section className="bg-white py-12 border-b">
+        {/* <section className="bg-white py-12 border-b">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
@@ -283,22 +269,24 @@ export default function Home() {
                   <div className="text-4xl md:text-5xl font-bold text-[#E56020] mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-gray-600 font-medium">{stat.label}</div>
+                  <div className="text-[#292929] font-medium">{stat.label}</div>
                 </div>
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
+        
+        
 
-        {/* Benefits Section */}
-        <section className="py-20 bg-gray-50">
+        {/* Why Choose ARZ Al Najah Section */}
+        <section className="py-20 px-10 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0A1A4A] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#3d1700] mb-4">
                 Why Choose ARZ Al Najah?
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                We make business setup in Dubai simple, fast, and hassle-free with our expert guidance
+                Your reliable partner for fast and affordable business setup in Dubai covering trade license, PRO, visa, documentation, and bank account processes.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -306,9 +294,9 @@ export default function Home() {
                 <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-6 text-center">
                     <div className="bg-[#E56020] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <benefit.icon className="w-8 h-8 text-[#E56020]" />
+                      <benefit.icon className="w-8 h-8 text-[#ffff]" />
                     </div>
-                    <h3 className="text-xl font-semibold text-[#0A1A4A] mb-3">
+                    <h3 className="text-xl font-semibold text-[#3d1700] mb-3">
                       {benefit.title}
                     </h3>
                     <p className="text-gray-600">{benefit.description}</p>
@@ -319,11 +307,79 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Business Setup Process */}
+<section className="py-20 px-10 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-12 md:mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#3d1700] mb-3">
+        Business Setup Process
+      </h2>
+      <p className="text-lg md:text-xl text-gray-500 max-w-3xl mx-auto">
+        Simple 6-step process to start your business in Dubai
+      </p>
+    </div>
+
+    {/* Timeline wrapper */}
+    <div className="max-w-6xl mx-auto">
+      {/* Desktop: horizontal flex with connectors. Mobile: vertical stacked */}
+      <div className="flex flex-col md:flex-row items-center md:items-center md:justify-between gap-6 md:gap-8">
+
+        {processSteps.map((item, index) => (
+          <React.Fragment key={index}>
+            {/* Step block */}
+            <div className="flex flex-col items-center text-center md:w-1/6 min-w-[120px]">
+              <div className="relative">
+                {/* Circle */}
+                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full
+                                bg-gradient-to-tr from-[#E56020] to-[#F6A35C]
+                                flex items-center justify-center font-bold text-white text-lg md:text-xl
+                                shadow-xl">
+                  {item.step}
+                </div>
+
+                {/* Desktop horizontal connector (drawn to the right, hidden on last) */}
+                {index < processSteps.length - 1 && (
+  <div className="hidden md:block absolute top-1/2 left-full ml-4 
+                  w-20 h-[2px] bg-[#E56020]/30 rounded-full" />
+)}
+
+              </div>
+
+              {/* Mobile vertical connector */}
+{index < processSteps.length - 1 && (
+  <div className="md:hidden w-[2px] h-6 mx-auto 
+                  bg-gradient-to-b from-[#E56020] to-[#F6A35C] 
+                  opacity-40 rounded-full mt-2" />
+)}
+
+
+              <div className="mt-4 max-w-[160px]">
+                <h4 className="font-semibold text-[#3d1700] text-sm md:text-base">{item.title}</h4>
+                <p className="text-xs md:text-sm text-gray-600 mt-1">{item.description}</p>
+              </div>
+            </div>
+
+            {/* Desktop connector spacer:
+                We render a separate flexible connector element between items to control spacing nicely.
+                Hidden on mobile because mobile uses vertical connectors above. */}
+            {index < processSteps.length - 1 && (
+              <div className="hidden md:flex items-center justify-center flex-1">
+                <div className="w-full h-1 bg-gradient-to-r from-[#E56020] to-[#F6A35C] opacity-30 rounded-full" />
+              </div>
+            )}
+          </React.Fragment>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+
         {/* Services Section */}
-        <section className="py-20 bg-white">
+        <section className="py-20 px-10 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0A1A4A] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#3d1700] mb-4">
                 Our Business Setup Services in Dubai
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -336,9 +392,12 @@ export default function Home() {
                   <Card className="h-full border-2 border-gray-200 hover:border-[#E56020] hover:shadow-xl transition-all cursor-pointer group">
                     <CardContent className="p-6">
                       <div className="bg-gray-50 group-hover:bg-[#E56020] group-hover:bg-opacity-10 w-14 h-14 rounded-lg flex items-center justify-center mb-4 transition-colors">
-                        <service.icon className={`w-7 h-7 ${service.color} group-hover:scale-110 transition-transform`} />
+                        <service.icon
+  className={`w-7 h-7 transition-all ${service.color} group-hover:text-white group-hover:scale-110`}
+/>
+
                       </div>
-                      <h3 className="text-lg font-semibold text-[#0A1A4A] mb-3">
+                      <h3 className="text-lg font-semibold text-[#3d1700] mb-3">
                         {service.title}
                       </h3>
                       <p className="text-gray-600 text-sm mb-4">{service.description}</p>
@@ -350,78 +409,120 @@ export default function Home() {
                 </Link>
               ))}
             </div>
-            <div className="text-center mt-12">
-              <Link href="/services/mainland-company-setup">
-                <Button size="lg" className="bg-[#0A1A4A] hover:bg-[#0D2158] text-white font-semibold">
-                  Explore All Services
-                </Button>
-              </Link>
+          </div>
+        </section>
+
+        {/* Image Gallery Section */}
+        <section className="py-20 px-10 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#3d1700] mb-4">
+                Business in Dubai
+              </h2>
+              <p className="text-xl text-gray-600">Start your success story in the heart of the UAE</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80"
+                  alt="Dubai Skyline - Business opportunities in UAE"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                  <span className="text-white font-semibold text-lg">Dubai Business Hub</span>
+                </div>
+              </div>
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=600&q=80"
+                  alt="Business Meeting - Professional services"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                  <span className="text-white font-semibold text-lg">Expert Consultation</span>
+                </div>
+              </div>
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
+                  alt="Modern Office - Corporate setup"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                  <span className="text-white font-semibold text-lg">Premium Offices</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Trust Section */}
-        <section className="py-20 bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white">
+         <section className="py-25 px-10 bg-gray-50">
+        {/* background image (subtle, full cover) */}
+  
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#3d1700]">
                   Trusted by Entrepreneurs Across the Globe
                 </h2>
-                <p className="text-xl text-gray-200 mb-8">
+                <p className="text-xl text-gray-500 mb-8">
                   ARZ Al Najah Business Setup Services has helped hundreds of businesses establish their presence in Dubai and the UAE. Our commitment to excellence and customer satisfaction sets us apart.
                 </p>
                 <ul className="space-y-4">
-                  <li className="flex items-start space-x-3">
+                  <li className="flex items-start space-x-3 ">
                     <Shield className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-lg mb-1">Licensed & Authorized</h4>
-                      <p className="text-gray-300">Registered business consultancy operating under UAE regulations</p>
+                      <h4 className="font-semibold text-lg mb-1 text-[#3d1700]">Licensed & Authorized</h4>
+                      <p className="text-gray-500">Registered business consultancy operating under UAE regulations</p>
                     </div>
                   </li>
                   <li className="flex items-start space-x-3">
                     <CheckCircle2 className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-lg mb-1">Expert Team</h4>
-                      <p className="text-gray-300">Experienced professionals with deep knowledge of UAE business laws</p>
+                      <h4 className="font-semibold text-lg mb-1 text-[#3d1700]">Expert Team</h4>
+                      <p className="text-gray-500">Experienced professionals with deep knowledge of UAE business laws</p>
                     </div>
                   </li>
                   <li className="flex items-start space-x-3">
                     <TrendingUp className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-lg mb-1">Transparent Pricing</h4>
-                      <p className="text-gray-300">No hidden fees - clear pricing with detailed breakdown of all costs</p>
+                      <h4 className="font-semibold text-lg mb-1 text-[#3d1700]">Transparent Pricing</h4>
+                      <p className="text-gray-500">No hidden fees - clear pricing with detailed breakdown of all costs</p>
                     </div>
                   </li>
                 </ul>
               </div>
               <div className="grid grid-cols-2 gap-6">
-                <Card className="bg-white bg-opacity-10 border-none backdrop-blur">
+                <Card className="bg-white bg-opacity-100 border-2 border-[#E56020] backdrop-blur">
                   <CardContent className="p-6 text-center">
                     <Award className="w-12 h-12 text-[#E56020] mx-auto mb-3" />
-                    <h4 className="font-semibold text-lg mb-2">Government Approved</h4>
-                    <p className="text-gray-300 text-sm">Authorized business consultancy</p>
+                    <h4 className="font-semibold text-lg mb-2 text-[#3d1700]">Government Approved</h4>
+                    <p className="text-gray-500 text-sm">Authorized business consultancy</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white bg-opacity-10 border-none backdrop-blur">
+                <Card className="bg-white bg-opacity-100 border-2 border-[#E56020] backdrop-blur">
                   <CardContent className="p-6 text-center">
                     <Star className="w-12 h-12 text-[#E56020] mx-auto mb-3" />
-                    <h4 className="font-semibold text-lg mb-2">5-Star Rated</h4>
-                    <p className="text-gray-300 text-sm">Top-rated by our clients</p>
+                    <h4 className="font-semibold text-lg mb-2 text-[#3d1700]">5-Star Rated</h4>
+                    <p className="text-gray-500 text-sm">Top-rated by our clients</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white bg-opacity-10 border-none backdrop-blur">
+                <Card className="bg-white bg-opacity-100 border-2 border-[#E56020] backdrop-blur">
                   <CardContent className="p-6 text-center">
                     <Clock className="w-12 h-12 text-[#E56020] mx-auto mb-3" />
-                    <h4 className="font-semibold text-lg mb-2">Quick Processing</h4>
-                    <p className="text-gray-300 text-sm">Fast license issuance</p>
+                    <h4 className="font-semibold text-lg mb-2 text-[#3d1700]">Quick Processing</h4>
+                    <p className="text-gray-500 text-sm">Fast license issuance</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-white bg-opacity-10 border-none backdrop-blur">
+                <Card className="bg-white bg-opacity-100 border-2 border-[#E56020] backdrop-blur">
                   <CardContent className="p-6 text-center">
                     <CheckCircle2 className="w-12 h-12 text-[#E56020] mx-auto mb-3" />
-                    <h4 className="font-semibold text-lg mb-2">100% Success</h4>
-                    <p className="text-gray-300 text-sm">Guaranteed approval</p>
+                    <h4 className="font-semibold text-lg mb-2 text-[#3d1700]">100% Success</h4>
+                    <p className="text-gray-500 text-sm">Guaranteed approval</p>
                   </CardContent>
                 </Card>
               </div>
@@ -430,7 +531,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-[#E56020]">
+        <section className="py-20 bg-[#E56020] ">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to Start Your Business in Dubai?
@@ -442,12 +543,12 @@ export default function Home() {
               <Button 
                 size="lg" 
                 onClick={openPopup}
-                className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold text-lg px-8 py-6"
+                className="bg-white text-[#3d1700] hover:bg-gray-100 font-semibold text-l px-8 py-6"
               >
                 Schedule Free Consultation
               </Button>
               <a href="tel:+971523149927">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#E56020] font-semibold text-lg px-8 py-6">
+                <Button size="lg" variant="outline" className="border-2 border-white text-[#3d1700] hover:bg-gray-100 hover:text-[#3d1700] font-semibold text-l px-8 py-6">
                   Call +971 52 314 9927
                 </Button>
               </a>

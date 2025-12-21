@@ -16,7 +16,7 @@ export default function TermsConditions() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
+      <section className="relative bg-gradient-to-br from-[#9c5a33] via-[#7a3e1f] to-[#3d1700] text-white py-15 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
@@ -44,7 +44,7 @@ export default function TermsConditions() {
                 <div className="flex items-start space-x-3">
                   <AlertCircle className="w-6 h-6 text-[#E56020] flex-shrink-0 mt-1" />
                   <div>
-                    <h2 className="text-xl font-bold text-[#0A1A4A] mb-2">Important Disclaimer</h2>
+                    <h2 className="text-xl font-bold text-[#3d1700] mb-2">Important Disclaimer</h2>
                     <p className="text-gray-700 leading-relaxed">
                       ARZ Al Najah Business Setup Services is a business consultancy firm and not a government authority. We facilitate business setup processes through our expertise and established relationships with relevant government departments in the UAE. All final approvals are subject to government authority decisions.
                     </p>
@@ -55,7 +55,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">1. Agreement to Terms</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">1. Agreement to Terms</h2>
                 <p className="text-gray-700 leading-relaxed">
                   By accessing our website or engaging our services, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not access our website or use our services.
                 </p>
@@ -64,7 +64,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">2. Services Description</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">2. Services Description</h2>
                 <div className="text-gray-700 space-y-3">
                   <p className="leading-relaxed">
                     ARZ Al Najah provides business setup consultancy services including:
@@ -86,7 +86,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">3. Client Obligations</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">3. Client Obligations</h2>
                 <div className="text-gray-700 space-y-3">
                   <p className="leading-relaxed">Clients are required to:</p>
                   <ul className="list-disc ml-6 space-y-2">
@@ -104,7 +104,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">4. Fees and Payment</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">4. Fees and Payment</h2>
                 <div className="text-gray-700 space-y-3">
                   <ul className="list-disc ml-6 space-y-2">
                     <li>All fees are quoted in AED and are subject to change without notice</li>
@@ -120,7 +120,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">5. Refund Policy</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">5. Refund Policy</h2>
                 <div className="text-gray-700 space-y-3">
                   <ul className="list-disc ml-6 space-y-2">
                     <li>Service fees are non-refundable after work has begun</li>
@@ -135,7 +135,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">6. Timelines and Delays</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">6. Timelines and Delays</h2>
                 <p className="text-gray-700 leading-relaxed">
                   While we strive to complete services within estimated timeframes, processing times depend on government authorities and are beyond our control. We are not liable for delays caused by government processing, incomplete documentation, public holidays, or force majeure events.
                 </p>
@@ -144,7 +144,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">7. Limitation of Liability</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">7. Limitation of Liability</h2>
                 <div className="text-gray-700 space-y-3">
                   <p className="leading-relaxed">
                     ARZ Al Najah shall not be liable for:
@@ -166,7 +166,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">8. Intellectual Property</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">8. Intellectual Property</h2>
                 <p className="text-gray-700 leading-relaxed">
                   All content on our website, including text, graphics, logos, and images, is the property of ARZ Al Najah and protected by copyright laws. You may not reproduce, distribute, or use our content without prior written permission.
                 </p>
@@ -175,7 +175,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">9. Confidentiality</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">9. Confidentiality</h2>
                 <p className="text-gray-700 leading-relaxed">
                   We maintain strict confidentiality of all client information and documents. We will not disclose your information to third parties except as required for service delivery, legal compliance, or with your explicit consent.
                 </p>
@@ -184,7 +184,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">10. Termination</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">10. Termination</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Either party may terminate services with written notice. Upon termination, clients remain responsible for fees incurred up to the termination date. Documents and licenses obtained before termination remain valid.
                 </p>
@@ -193,7 +193,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">11. Governing Law</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">11. Governing Law</h2>
                 <p className="text-gray-700 leading-relaxed">
                   These Terms and Conditions are governed by the laws of the United Arab Emirates. Any disputes shall be subject to the exclusive jurisdiction of Dubai courts.
                 </p>
@@ -202,7 +202,7 @@ export default function TermsConditions() {
 
             <Card className="mb-8">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">12. Amendments</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">12. Amendments</h2>
                 <p className="text-gray-700 leading-relaxed">
                   We reserve the right to modify these Terms and Conditions at any time. Changes will be effective immediately upon posting to our website. Continued use of our services constitutes acceptance of modified terms.
                 </p>
@@ -211,7 +211,7 @@ export default function TermsConditions() {
 
             <Card>
               <CardContent className="p-8 bg-gray-50">
-                <h2 className="text-2xl font-bold text-[#0A1A4A] mb-4">Contact Information</h2>
+                <h2 className="text-2xl font-bold text-[#3d1700] mb-4">Contact Information</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   For questions regarding these Terms and Conditions, please contact:
                 </p>

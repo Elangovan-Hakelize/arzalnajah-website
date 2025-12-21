@@ -75,7 +75,7 @@ export default function DubaiTradeLicenseGuide() {
             <span>/</span>
             <Link href="/blog" className="hover:text-[#E56020]">Blog</Link>
             <span>/</span>
-            <span className="text-[#0A1A4A]">Dubai Trade License Guide</span>
+            <span className="text-[#3d1700]">Dubai Trade License Guide</span>
           </div>
         </div>
       </section>
@@ -95,7 +95,7 @@ export default function DubaiTradeLicenseGuide() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-[#0A1A4A] mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#3d1700] mb-6">
               Step-by-Step Guide to Getting a Dubai Trade License
             </h1>
 
@@ -122,7 +122,7 @@ export default function DubaiTradeLicenseGuide() {
                 A trade license is the most fundamental requirement for starting any business in Dubai. This comprehensive guide explains everything you need to know about obtaining, maintaining, and renewing your Dubai trade license in 2025.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 What is a Dubai Trade License?
               </h2>
               <p className="text-gray-700 mb-6">
@@ -132,7 +132,7 @@ export default function DubaiTradeLicenseGuide() {
                 Without a valid trade license, you cannot legally conduct business, open a corporate bank account, hire employees, or sponsor visas in Dubai.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Types of Trade Licenses in Dubai
               </h2>
 
@@ -141,12 +141,12 @@ export default function DubaiTradeLicenseGuide() {
                   <Card key={index} className="border-2 border-gray-200">
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-4">
-                        <h3 className="text-2xl font-bold text-[#0A1A4A]">{license.type}</h3>
+                        <h3 className="text-2xl font-bold text-[#3d1700]">{license.type}</h3>
                         <span className="text-[#E56020] font-bold">{license.cost}</span>
                       </div>
                       <p className="text-gray-600 mb-4">{license.description}</p>
                       <div className="bg-gray-50 p-4 rounded-lg">
-                        <h4 className="font-semibold text-[#0A1A4A] mb-2">Permitted Activities:</h4>
+                        <h4 className="font-semibold text-[#3d1700] mb-2">Permitted Activities:</h4>
                         <ul className="grid md:grid-cols-2 gap-2">
                           {license.activities.map((activity, idx) => (
                             <li key={idx} className="flex items-center space-x-2">
@@ -161,7 +161,7 @@ export default function DubaiTradeLicenseGuide() {
                 ))}
               </div>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Application Process
               </h2>
               <div className="space-y-6 mb-8">
@@ -173,14 +173,14 @@ export default function DubaiTradeLicenseGuide() {
                       </div>
                     </div>
                     <div className="flex-1 pb-6 border-l-2 border-gray-200 pl-6 -ml-6 last:border-l-0">
-                      <h3 className="text-xl font-bold text-[#0A1A4A] mb-2">{item.title}</h3>
+                      <h3 className="text-xl font-bold text-[#3d1700] mb-2">{item.title}</h3>
                       <p className="text-gray-600">{item.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Required Documents
               </h2>
               <Card className="border-2 border-[#E56020] mb-8">
@@ -222,7 +222,7 @@ export default function DubaiTradeLicenseGuide() {
                 </CardContent>
               </Card>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 License Costs Breakdown
               </h2>
               <Card className="border-2 border-gray-200 mb-8">
@@ -230,40 +230,40 @@ export default function DubaiTradeLicenseGuide() {
                   <div className="space-y-3">
                     <div className="flex justify-between items-center py-2 border-b">
                       <span className="text-gray-700">Initial Approval Fee</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 1,200</span>
+                      <span className="font-semibold text-[#3d1700]">AED 1,200</span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b">
                       <span className="text-gray-700">Trade License Fee (Annual)</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 10,000 - 15,000</span>
+                      <span className="font-semibold text-[#3d1700]">AED 10,000 - 15,000</span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b">
                       <span className="text-gray-700">Memorandum of Association</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 2,000</span>
+                      <span className="font-semibold text-[#3d1700]">AED 2,000</span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b">
                       <span className="text-gray-700">Chamber of Commerce Registration</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 1,000</span>
+                      <span className="font-semibold text-[#3d1700]">AED 1,000</span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b">
                       <span className="text-gray-700">External Approvals (if needed)</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 1,000 - 5,000</span>
+                      <span className="font-semibold text-[#3d1700]">AED 1,000 - 5,000</span>
                     </div>
                     <div className="flex justify-between items-center py-2">
                       <span className="text-gray-700">Service/Typing Charges</span>
-                      <span className="font-semibold text-[#0A1A4A]">AED 500 - 1,000</span>
+                      <span className="font-semibold text-[#3d1700]">AED 500 - 1,000</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Processing Timeline
               </h2>
               <p className="text-gray-700 mb-8">
                 The complete trade license process takes approximately <strong>5-7 working days</strong> for straightforward applications. However, businesses requiring special approvals (food, healthcare, education) may take 2-3 weeks. Starting early and having all documents ready significantly speeds up the process.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 License Renewal Process
               </h2>
               <p className="text-gray-700 mb-4">
@@ -279,7 +279,7 @@ export default function DubaiTradeLicenseGuide() {
                 <strong>Pro Tip:</strong> Start renewal process 30-60 days before expiry to avoid late fees and business disruption.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Common Mistakes to Avoid
               </h2>
               <div className="bg-red-50 border-2 border-red-200 rounded-lg p-6 mb-8">
@@ -293,14 +293,14 @@ export default function DubaiTradeLicenseGuide() {
                 </ul>
               </div>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Activities You Can Add to Your License
               </h2>
               <p className="text-gray-700 mb-8">
                 Most businesses can list multiple activities on a single trade license. However, you must choose activities from the same category (commercial, professional, or industrial). Adding activities costs AED 1,000 - 2,000 per activity through a license amendment process.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Conclusion
               </h2>
               <p className="text-gray-700 mb-8">
@@ -311,7 +311,7 @@ export default function DubaiTradeLicenseGuide() {
             {/* CTA Card */}
             <Card className="border-2 border-[#E56020] mt-12">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">
+                <h3 className="text-2xl font-bold text-[#3d1700] mb-4">
                   Ready to Get Your Dubai Trade License?
                 </h3>
                 <p className="text-gray-600 mb-6">

@@ -107,7 +107,7 @@ export default function BestFreezonesEcommerceUAE() {
             <span>/</span>
             <Link href="/blog" className="hover:text-[#E56020]">Blog</Link>
             <span>/</span>
-            <span className="text-[#0A1A4A]">Best Freezones for E-Commerce UAE</span>
+            <span className="text-[#3d1700]">Best Freezones for E-Commerce UAE</span>
           </div>
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function BestFreezonesEcommerceUAE() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-[#0A1A4A] mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#3d1700] mb-6">
               Best Free Zones for E-Commerce Companies in UAE
             </h1>
 
@@ -154,7 +154,7 @@ export default function BestFreezonesEcommerceUAE() {
                 The UAE has become a global hub for e-commerce businesses, thanks to strategic free zones offering competitive advantages. This comprehensive guide compares the top free zones for online businesses in 2025.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Why Choose a Free Zone for E-Commerce?
               </h2>
               <p className="text-gray-700 mb-4">
@@ -183,7 +183,7 @@ export default function BestFreezonesEcommerceUAE() {
                 </li>
               </ul>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Top Free Zones for E-Commerce Businesses
               </h2>
 
@@ -193,7 +193,7 @@ export default function BestFreezonesEcommerceUAE() {
                     <CardContent className="p-6">
                       <div className="flex justify-between items-start mb-4">
                         <div>
-                          <h3 className="text-2xl font-bold text-[#0A1A4A] mb-2">{zone.name}</h3>
+                          <h3 className="text-2xl font-bold text-[#3d1700] mb-2">{zone.name}</h3>
                           <div className="flex items-center space-x-2 mb-2">
                             {[...Array(zone.rating)].map((_, i) => (
                               <Star key={i} className="w-5 h-5 text-[#E56020] fill-current" />
@@ -207,7 +207,7 @@ export default function BestFreezonesEcommerceUAE() {
                       </div>
                       
                       <div className="bg-gray-50 rounded-lg p-4 mb-4">
-                        <h4 className="font-semibold text-[#0A1A4A] mb-3">Key Benefits:</h4>
+                        <h4 className="font-semibold text-[#3d1700] mb-3">Key Benefits:</h4>
                         <ul className="grid md:grid-cols-2 gap-2">
                           {zone.benefits.map((benefit, idx) => (
                             <li key={idx} className="flex items-start space-x-2">
@@ -228,7 +228,7 @@ export default function BestFreezonesEcommerceUAE() {
                 ))}
               </div>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Dubai CommerCity: The E-Commerce Specialist
               </h2>
               <p className="text-gray-700 mb-4">
@@ -243,7 +243,7 @@ export default function BestFreezonesEcommerceUAE() {
                 <li>Close proximity to Dubai International Airport</li>
               </ul>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Quick Comparison
               </h2>
               <Card className="border-2 border-[#E56020] mb-8">
@@ -251,7 +251,7 @@ export default function BestFreezonesEcommerceUAE() {
                   <div className="space-y-4">
                     {comparisonFactors.map((item, index) => (
                       <div key={index} className="flex justify-between items-center py-3 border-b last:border-b-0">
-                        <span className="font-semibold text-[#0A1A4A]">{item.factor}</span>
+                        <span className="font-semibold text-[#3d1700]">{item.factor}</span>
                         <span className="text-gray-700 text-sm">{item.winner}</span>
                       </div>
                     ))}
@@ -259,7 +259,7 @@ export default function BestFreezonesEcommerceUAE() {
                 </CardContent>
               </Card>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 What Activities Can You Conduct?
               </h2>
               <p className="text-gray-700 mb-4">
@@ -268,7 +268,7 @@ export default function BestFreezonesEcommerceUAE() {
               <div className="grid md:grid-cols-2 gap-4 mb-8">
                 <Card className="border-gray-200">
                   <CardContent className="p-4">
-                    <h4 className="font-semibold text-[#0A1A4A] mb-2">✅ Permitted Activities</h4>
+                    <h4 className="font-semibold text-[#3d1700] mb-2">✅ Permitted Activities</h4>
                     <ul className="space-y-1 text-sm text-gray-700">
                       <li>• Online retail and wholesale</li>
                       <li>• Dropshipping operations</li>
@@ -281,7 +281,7 @@ export default function BestFreezonesEcommerceUAE() {
                 </Card>
                 <Card className="border-gray-200">
                   <CardContent className="p-4">
-                    <h4 className="font-semibold text-[#0A1A4A] mb-2">⚠️ Considerations</h4>
+                    <h4 className="font-semibold text-[#3d1700] mb-2">⚠️ Considerations</h4>
                     <ul className="space-y-1 text-sm text-gray-700">
                       <li>• Mainland trading may need distributor</li>
                       <li>• Physical retail requires mainland license</li>
@@ -293,13 +293,13 @@ export default function BestFreezonesEcommerceUAE() {
                 </Card>
               </div>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Cost Comparison (Annual)
               </h2>
               <div className="overflow-x-auto mb-8">
                 <table className="w-full border-collapse">
                   <thead>
-                    <tr className="bg-[#0A1A4A] text-white">
+                    <tr className="bg-[#3d1700] text-white">
                       <th className="p-3 text-left">Free Zone</th>
                       <th className="p-3 text-left">Flexi-Desk</th>
                       <th className="p-3 text-left">Shared Office</th>
@@ -335,7 +335,7 @@ export default function BestFreezonesEcommerceUAE() {
                 </table>
               </div>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Making Your Decision
               </h2>
               <p className="text-gray-700 mb-4">
@@ -359,14 +359,14 @@ export default function BestFreezonesEcommerceUAE() {
                 </li>
               </ul>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Additional Considerations
               </h2>
               <p className="text-gray-700 mb-8">
                 Beyond the free zone choice, remember to consider payment gateway setup, UAE bank account requirements, VAT registration obligations, marketplace seller agreements, and logistics partners for inventory management.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Conclusion
               </h2>
               <p className="text-gray-700 mb-8">
@@ -377,7 +377,7 @@ export default function BestFreezonesEcommerceUAE() {
             {/* CTA Card */}
             <Card className="border-2 border-[#E56020] mt-12">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">
+                <h3 className="text-2xl font-bold text-[#3d1700] mb-4">
                   Start Your E-Commerce Business in UAE
                 </h3>
                 <p className="text-gray-600 mb-6">

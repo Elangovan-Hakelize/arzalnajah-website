@@ -19,8 +19,8 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     try {
       await resend.emails.send({
-        from: "ARZ Al Najah <onboarding@resend.dev>", // Use your verified domain later
-        to: "elangovan7112002@gmail.com",
+        from: "ARZ Al Najah <enquiry@enquiry.arzalnajah.com>", // Use your verified domain later
+        to: "arzalnajahbusiness@gmail.com",
         subject: `🎯 New Business Enquiry from ${name}`,
         html: `
           <!DOCTYPE html>
@@ -88,6 +88,64 @@ export async function POST(request: NextRequest) {
           </html>
         `,
       });
+
+      // 2️⃣ SEND AUTO-REPLY TO CUSTOMER (NEW)
+await resend.emails.send({
+  from: "ARZ Al Najah <enquiry@enquiry.arzalnajah.com>", // SAME sender
+  to: email, // 👈 CUSTOMER EMAIL
+  subject: "We received your enquiry – ARZ Al Najah",
+  html: `
+    <!DOCTYPE html>
+    <html>
+      <body style="font-family: Arial, sans-serif; background: #f8f9fa; padding: 20px;">
+        <div style="max-width: 600px; margin: auto; background: #ffffff; border-radius: 8px; overflow: hidden;">
+          
+          <div style="background: linear-gradient(135deg, #0A1A4A, #0D2158); color: #ffffff; padding: 25px; text-align: center;">
+            <h2 style="margin: 0;">Thank You for Contacting Us!</h2>
+            <p style="margin: 8px 0 0; opacity: 0.9;">ARZ Al Najah Business Setup Services</p>
+          </div>
+
+          <div style="padding: 25px; color: #333;">
+            <p>Hi <strong>${name}</strong>,</p>
+
+            <p>
+              Thank you for reaching out to <strong>ARZ Al Najah</strong>.
+              We have successfully received your enquiry regarding
+              <strong>${service}</strong>.
+            </p>
+
+            <p>
+              📞 Our business setup experts will contact you within
+              <strong>24 hours</strong> to guide you further.
+            </p>
+
+            <div style="margin: 20px 0; padding: 15px; background: #f0f7ff; border-left: 4px solid #E56020;">
+              <strong>Your submitted details:</strong><br/>
+              📧 Email: ${email}<br/>
+              📱 Phone: ${phone}
+            </div>
+
+            <p>
+              If you need immediate assistance, feel free to reply to this email
+              or contact us on WhatsApp.
+            </p>
+
+            <p style="margin-top: 30px;">
+              Warm regards,<br/>
+              <strong>ARZ Al Najah Team</strong><br/>
+              🌐 arzalnajah.com
+              +971 52 310 7392
+            </p>
+          </div>
+
+          <div style="text-align: center; padding: 15px; font-size: 12px; color: #777;">
+            © ${new Date().getFullYear()} ARZ Al Najah Business Setup Services
+          </div>
+        </div>
+      </body>
+    </html>
+  `,
+});
     } catch (emailError) {
       console.error("Resend email error:", emailError);
       // If Resend fails, log the enquiry for manual follow-up

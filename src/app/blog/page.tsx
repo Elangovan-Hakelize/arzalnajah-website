@@ -1,15 +1,12 @@
+'use client';
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, ArrowRight, Clock } from "lucide-react";
-import type { Metadata } from "next";
+import { useEnquiryPopup } from "@/components/EnquiryPopup";
 
-export const metadata: Metadata = {
-  title: "Business Setup Blog | Dubai Company Formation Insights - ARZ Al Najah",
-  description: "Expert insights on Dubai business setup, UAE company formation, visa requirements, and entrepreneur guides. Stay updated with latest regulations and best practices.",
-  keywords: "Dubai business blog, UAE company formation guide, business setup tips Dubai, entrepreneur resources UAE",
-};
 
 export default function Blog() {
+  const { openPopup } = useEnquiryPopup();
   const articles = [
     {
       slug: "cost-of-business-setup-dubai-2025",
@@ -61,7 +58,7 @@ export default function Blog() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
+      <section className="bg-gradient-to-br from-[#9c5a33] via-[#7a3e1f] to-[#3d1700] text-white px-10 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
@@ -73,7 +70,12 @@ export default function Blog() {
               Business Setup Insights & Guides
             </h1>
             <p className="text-xl text-gray-200">
-              Expert advice, latest updates, and comprehensive guides on starting and growing your business in Dubai and UAE
+              Explore expert advice, the latest updates, and step-by-step
+guides on starting and growing your business in Dubai and the
+UAE.
+From trade licenses to visas, Freezone rules, Mainland
+regulations, and banking-our blog provides everything you
+need to make informed business decisions.
             </p>
           </div>
         </div>
@@ -97,7 +99,7 @@ export default function Blog() {
                     </span>
                     <span className="text-gray-600 text-sm">{articles[0].category}</span>
                   </div>
-                  <h2 className="text-3xl font-bold text-[#0A1A4A] mb-4">
+                  <h2 className="text-3xl font-bold text-[#3d1700] mb-4">
                     {articles[0].title}
                   </h2>
                   <p className="text-gray-600 mb-6">{articles[0].excerpt}</p>
@@ -135,7 +137,7 @@ export default function Blog() {
                       <span className="text-gray-400">•</span>
                       <span className="text-gray-500 text-sm">{article.readTime}</span>
                     </div>
-                    <h3 className="text-xl font-bold text-[#0A1A4A] mb-3 group-hover:text-[#E56020] transition-colors">
+                    <h3 className="text-xl font-bold text-[#3d1700] mb-3 group-hover:text-[#E56020] transition-colors">
                       {article.title}
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-3">{article.excerpt}</p>
@@ -166,11 +168,11 @@ export default function Blog() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Get expert guidance from our business setup specialists
           </p>
-          <Link href="/contact">
-            <button className="bg-white text-[#E56020] hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+         
+            <button onClick={openPopup} className="bg-white text-[#3d1700] hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
               Schedule Free Consultation
             </button>
-          </Link>
+       
         </div>
       </section>
     </main>

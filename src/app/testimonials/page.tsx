@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 import { useEnquiryPopup } from "@/components/EnquiryPopup";
@@ -96,7 +97,7 @@ export default function Testimonials() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
+      <section className="bg-gradient-to-br from-[#9c5a33] via-[#7a3e1f] to-[#3d1700] text-white px-10 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
@@ -108,7 +109,7 @@ export default function Testimonials() {
               Client Success Stories
             </h1>
             <p className="text-xl text-gray-200">
-              Hear from entrepreneurs and businesses who trusted ARZ Al Najah for their company formation in Dubai and UAE
+              Discover how entrepreneurs and businesses successfully launched their companies in Dubai with the help of ARZ Al Najah. Real experiences, real results—from company formation to visas, licensing, and banking support.
             </p>
           </div>
         </div>
@@ -119,7 +120,7 @@ export default function Testimonials() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#E56020] mb-2">500+</div>
+              <div className="text-4xl font-bold text-[#E56020] mb-2">50+</div>
               <div className="text-gray-600">Happy Clients</div>
             </div>
             <div className="text-center">
@@ -131,7 +132,7 @@ export default function Testimonials() {
               <div className="text-gray-600">Average Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#E56020] mb-2">15+</div>
+              <div className="text-4xl font-bold text-[#E56020] mb-2">2+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
           </div>
@@ -161,7 +162,7 @@ export default function Testimonials() {
                       className="w-12 h-12 rounded-full object-cover"
                     />
                     <div>
-                      <div className="font-bold text-[#0A1A4A]">{testimonial.name}</div>
+                      <div className="font-bold text-[#3d1700]">{testimonial.name}</div>
                       <div className="text-sm text-gray-600">{testimonial.company}</div>
                       <div className="text-xs text-gray-500">{testimonial.industry} • {testimonial.location}</div>
                     </div>
@@ -173,32 +174,32 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Trust Badges */}
+      {/* Trust Badges
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12">
+          <h2 className="text-3xl font-bold text-[#3d1700] mb-12">
             Trusted by Businesses Across Industries
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-4xl mb-2">🏢</div>
-              <div className="font-semibold text-[#0A1A4A]">Trading</div>
+              <div className="font-semibold text-[#3d1700]">Trading</div>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-2">💼</div>
-              <div className="font-semibold text-[#0A1A4A]">Consulting</div>
+              <div className="font-semibold text-[#3d1700]">Consulting</div>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-2">💻</div>
-              <div className="font-semibold text-[#0A1A4A]">Technology</div>
+              <div className="font-semibold text-[#3d1700]">Technology</div>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-2">🍽️</div>
-              <div className="font-semibold text-[#0A1A4A]">F&B</div>
+              <div className="font-semibold text-[#3d1700]">F&B</div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-[#E56020] to-[#C4501A] text-white">
@@ -212,7 +213,7 @@ export default function Testimonials() {
           <Button 
             size="lg"
             onClick={openPopup}
-            className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold"
+            className="bg-white text-[#3d1700] hover:bg-gray-100 font-semibold"
           >
             Get Free Consultation
           </Button>

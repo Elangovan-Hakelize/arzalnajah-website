@@ -12,10 +12,10 @@ import { EnquiryPopupProvider } from "@/components/EnquiryPopup";
 export const metadata: Metadata = {
   metadataBase: new URL('https://arzalnajah.com'),
   title: {
-    default: "ARZ Al Najah Business Setup Services | Dubai Company Formation & UAE Business License",
+    default: "Start Your Business in Dubai | Mainland, Freezone & Offshore Company Formation UAE",
     template: "%s | ARZ Al Najah Business Setup"
   },
-  description: "Expert business setup and company formation services in Dubai & UAE. Mainland, Freezone, Offshore licenses from AED 5,000. Fast 3-5 day setup. 500+ companies formed. Free consultation: +971 52 314 9927",
+  description: "Looking to register your company in Dubai or set up a Freezone entity? Our team offers full-service Mainland, Freezone, Offshore Company Formation, PRO & Visa processing, Trade license acquisition, and Bank account assistance.",
   keywords: [
     "Dubai business setup",
     "UAE company formation",

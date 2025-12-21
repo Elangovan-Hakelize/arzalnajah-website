@@ -39,7 +39,7 @@ export default function CostOfBusinessSetupDubai2025() {
             <span>/</span>
             <Link href="/blog" className="hover:text-[#E56020]">Blog</Link>
             <span>/</span>
-            <span className="text-[#0A1A4A]">Cost of Business Setup in Dubai 2025</span>
+            <span className="text-[#3d1700]">Cost of Business Setup in Dubai 2025</span>
           </div>
         </div>
       </section>
@@ -59,7 +59,7 @@ export default function CostOfBusinessSetupDubai2025() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold text-[#0A1A4A] mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#3d1700] mb-6">
               Cost of Business Setup in Dubai 2025: Complete Breakdown
             </h1>
 
@@ -86,7 +86,7 @@ export default function CostOfBusinessSetupDubai2025() {
                 Starting a business in Dubai is an exciting venture, but understanding the complete cost structure is crucial for proper financial planning. In this comprehensive guide, we break down all expenses you'll encounter when setting up your company in Dubai in 2025.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Mainland Company Setup Costs
               </h2>
               <p className="text-gray-700 mb-6">
@@ -95,7 +95,7 @@ export default function CostOfBusinessSetupDubai2025() {
 
               <Card className="border-2 border-gray-200 mb-8">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#0A1A4A] mb-4">Mainland Cost Breakdown</h3>
+                  <h3 className="text-xl font-bold text-[#3d1700] mb-4">Mainland Cost Breakdown</h3>
                   <div className="space-y-3">
                     {mainlandCosts.map((item, index) => (
                       <div key={index} className="flex justify-between items-center py-2 border-b last:border-b-0">
@@ -104,14 +104,14 @@ export default function CostOfBusinessSetupDubai2025() {
                       </div>
                     ))}
                     <div className="flex justify-between items-center pt-4 font-bold text-lg">
-                      <span className="text-[#0A1A4A]">Total Estimated Cost:</span>
+                      <span className="text-[#3d1700]">Total Estimated Cost:</span>
                       <span className="text-[#E56020]">AED 30,000 - 80,000</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Freezone Company Setup Costs
               </h2>
               <p className="text-gray-700 mb-6">
@@ -120,7 +120,7 @@ export default function CostOfBusinessSetupDubai2025() {
 
               <Card className="border-2 border-gray-200 mb-8">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#0A1A4A] mb-4">Freezone Cost Breakdown</h3>
+                  <h3 className="text-xl font-bold text-[#3d1700] mb-4">Freezone Cost Breakdown</h3>
                   <div className="space-y-3">
                     {freezoneCosts.map((item, index) => (
                       <div key={index} className="flex justify-between items-center py-2 border-b last:border-b-0">
@@ -129,14 +129,14 @@ export default function CostOfBusinessSetupDubai2025() {
                       </div>
                     ))}
                     <div className="flex justify-between items-center pt-4 font-bold text-lg">
-                      <span className="text-[#0A1A4A]">Total Estimated Cost:</span>
+                      <span className="text-[#3d1700]">Total Estimated Cost:</span>
                       <span className="text-[#E56020]">AED 18,000 - 45,000</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Additional Costs to Consider
               </h2>
               <ul className="space-y-3 mb-8">
@@ -172,7 +172,7 @@ export default function CostOfBusinessSetupDubai2025() {
                 </li>
               </ul>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Cost-Saving Tips
               </h2>
               <p className="text-gray-700 mb-4">
@@ -186,14 +186,14 @@ export default function CostOfBusinessSetupDubai2025() {
                 <li><strong>Consider shared office space:</strong> Significantly cheaper than private offices.</li>
               </ol>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Hidden Costs to Watch Out For
               </h2>
               <p className="text-gray-700 mb-8">
                 Many entrepreneurs underestimate these expenses. Be prepared for document translation fees, multiple attestations, courier services for government submissions, medical fitness tests for visas, and Emirates ID issuance fees.
               </p>
 
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-[#3d1700] mt-12 mb-6">
                 Conclusion
               </h2>
               <p className="text-gray-700 mb-8">
@@ -204,7 +204,7 @@ export default function CostOfBusinessSetupDubai2025() {
             {/* CTA Card */}
             <Card className="border-2 border-[#E56020] mt-12">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-[#0A1A4A] mb-4">
+                <h3 className="text-2xl font-bold text-[#3d1700] mb-4">
                   Get a Detailed Cost Estimate for Your Business
                 </h3>
                 <p className="text-gray-600 mb-6">

@@ -1,16 +1,16 @@
+'use client';
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Star, Award, Crown } from "lucide-react";
-import type { Metadata } from "next";
+import { useEnquiryPopup } from "@/components/EnquiryPopup";
 
-export const metadata: Metadata = {
-  title: "Business Setup Packages Dubai | Transparent Pricing - ARZ Al Najah",
-  description: "Compare our business setup packages for Dubai company formation. Transparent pricing for mainland, freezone & offshore licenses. Choose the perfect package for your business.",
-  keywords: "business setup packages Dubai, company formation cost UAE, Dubai license packages, business setup pricing",
-};
 
 export default function Packages() {
+
+  const { openPopup } = useEnquiryPopup();
+
   const mainlandPackages = [
     {
       name: "Starter",
@@ -141,7 +141,7 @@ export default function Packages() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0A1A4A] to-[#0D2158] text-white py-20">
+      <section className="bg-gradient-to-br from-[#9c5a33] via-[#7a3e1f] to-[#3d1700] text-white px-10 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center space-x-2 text-[#E56020] mb-4">
@@ -153,7 +153,11 @@ export default function Packages() {
               Business Setup Packages
             </h1>
             <p className="text-xl text-gray-200 mb-8">
-              Transparent pricing with no hidden fees. Choose the perfect package for your business needs in Dubai and UAE.
+              Get transparent, all-inclusive pricing with no hidden charges.
+Choose the right business setup package for your company.
+Our packages are designed for entrepreneurs, startups, and
+investors who want a fast, compliant, and affordable company
+formation process.
             </p>
           </div>
         </div>
@@ -163,7 +167,7 @@ export default function Packages() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-4">
+            <h2 className="text-3xl font-bold text-[#3d1700] mb-4">
               Mainland Company Setup Packages
             </h2>
             <p className="text-xl text-gray-600">
@@ -180,9 +184,9 @@ export default function Packages() {
                 )}
                 <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-4">
-                    <pkg.icon className={`w-12 h-12 ${pkg.popular ? 'text-[#E56020]' : 'text-[#0A1A4A]'}`} />
+                    <pkg.icon className={`w-12 h-12 ${pkg.popular ? 'text-[#E56020]' : 'text-[#3d1700]'}`} />
                   </div>
-                  <h3 className="text-2xl font-bold text-[#0A1A4A] mb-2">{pkg.name}</h3>
+                  <h3 className="text-2xl font-bold text-[#3d1700] mb-2">{pkg.name}</h3>
                   <div className="text-4xl font-bold text-[#E56020] mb-2">{pkg.price}</div>
                   <p className="text-sm text-gray-600 mb-6">Ideal for: {pkg.ideal}</p>
                   <ul className="space-y-3 mb-8">
@@ -194,7 +198,7 @@ export default function Packages() {
                     ))}
                   </ul>
                   <Link href="/contact">
-                    <Button className={`w-full ${pkg.popular ? 'bg-[#E56020] hover:bg-[#C4501A]' : 'bg-[#0A1A4A] hover:bg-[#0D2158]'} text-white font-semibold`}>
+                    <Button className={`w-full ${pkg.popular ? 'bg-[#E56020] hover:bg-[#C4501A]' : 'bg-[#3d1700] hover:bg-[#3d1700]'} text-white font-semibold`}>
                       Choose Package
                     </Button>
                   </Link>
@@ -209,7 +213,7 @@ export default function Packages() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#0A1A4A] mb-4">
+            <h2 className="text-3xl font-bold text-[#3d1700] mb-4">
               Freezone Business Setup Packages
             </h2>
             <p className="text-xl text-gray-600">
@@ -225,7 +229,7 @@ export default function Packages() {
                   </div>
                 )}
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-[#0A1A4A] mb-2">{pkg.name}</h3>
+                  <h3 className="text-2xl font-bold text-[#3d1700] mb-2">{pkg.name}</h3>
                   <div className="text-4xl font-bold text-[#E56020] mb-2">{pkg.price}</div>
                   <p className="text-sm text-gray-600 mb-6">Ideal for: {pkg.ideal}</p>
                   <ul className="space-y-3 mb-8">
@@ -237,7 +241,7 @@ export default function Packages() {
                     ))}
                   </ul>
                   <Link href="/contact">
-                    <Button className={`w-full ${pkg.popular ? 'bg-[#E56020] hover:bg-[#C4501A]' : 'bg-[#0A1A4A] hover:bg-[#0D2158]'} text-white font-semibold`}>
+                    <Button className={`w-full ${pkg.popular ? 'bg-[#E56020] hover:bg-[#C4501A]' : 'bg-[#3d1700] hover:bg-[#3d1700]'} text-white font-semibold`}>
                       Choose Package
                     </Button>
                   </Link>
@@ -251,13 +255,13 @@ export default function Packages() {
       {/* Comparison Table */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
+          <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
             Package Comparison
           </h2>
           <div className="max-w-5xl mx-auto overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
-                <tr className="bg-[#0A1A4A] text-white">
+                <tr className="bg-[#3d1700] text-white">
                   <th className="p-4 text-left font-semibold">Feature</th>
                   <th className="p-4 text-center font-semibold">Starter</th>
                   <th className="p-4 text-center font-semibold bg-[#E56020]">Professional</th>
@@ -282,7 +286,7 @@ export default function Packages() {
       {/* Additional Services */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[#0A1A4A] mb-12 text-center">
+          <h2 className="text-3xl font-bold text-[#3d1700] mb-12 text-center">
             Additional Services
           </h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -303,7 +307,7 @@ export default function Packages() {
         <div className="container mx-auto px-4">
           <Card className="border-2 border-[#E56020] max-w-4xl mx-auto">
             <CardContent className="p-12 text-center">
-              <h2 className="text-3xl font-bold text-[#0A1A4A] mb-4">
+              <h2 className="text-3xl font-bold text-[#3d1700] mb-4">
                 Need a Custom Package?
               </h2>
               <p className="text-xl text-gray-600 mb-8">
@@ -329,13 +333,13 @@ export default function Packages() {
             Choose your package and let's begin your business journey in Dubai
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button size="lg" className="bg-white text-[#E56020] hover:bg-gray-100 font-semibold">
+            
+              <Button size="lg" onClick={openPopup} className="bg-white text-[#3d1700] hover:bg-gray-100 font-semibold">
                 Schedule Consultation
               </Button>
-            </Link>
+           
             <a href="https://wa.me/971523149927" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#E56020]">
+              <Button size="lg" variant="outline" className="border-2 border-white text-[#3d1700] hover:bg-gray-100 hover:text-[#3d1700] font-semibold">
                 WhatsApp Us
               </Button>
             </a>
