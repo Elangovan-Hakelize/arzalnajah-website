@@ -150,8 +150,8 @@ export default function Contact() {
                   <Phone className="w-8 h-8 text-[#ffff]" />
                 </div>
                 <h3 className="font-bold text-[#3d1700] mb-2">Call Us</h3>
-                <a href="tel:+971523149927" className="text-gray-600 hover:text-[#E56020] transition-colors">
-                  +971 52 314 9927
+                <a href="tel:+971568567705" className="text-gray-600 hover:text-[#E56020] transition-colors">
+                  +971 56 856 7705
                 </a>
                 <p className="text-sm text-gray-500 mt-2">Mon - Sat: 9AM - 6PM</p>
               </CardContent>
@@ -361,7 +361,7 @@ export default function Contact() {
                 <h3 className="font-bold text-[#3d1700] mb-4">Quick Contact</h3>
                 <div className="space-y-3">
                   <a 
-                    href="https://wa.me/971523149927" 
+                    href="https://wa.me/971568567705" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 text-gray-700 hover:text-[#E56020] transition-colors"
@@ -373,11 +373,11 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="font-semibold">WhatsApp</div>
-                      <div className="text-sm">+971 52 314 9927</div>
+                      <div className="text-sm">+971 56 856 7705</div>
                     </div>
                   </a>
                   <a 
-                    href="tel:+971523149927"
+                    href="tel:+971 56 856 7705"
                     className="flex items-center space-x-3 text-gray-700 hover:text-[#E56020] transition-colors"
                   >
                     <div className="bg-[#E56020] text-white w-10 h-10 rounded-full flex items-center justify-center">
@@ -385,7 +385,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="font-semibold">Call Direct</div>
-                      <div className="text-sm">+971 52 314 9927</div>
+                      <div className="text-sm">+971 56 856 7705</div>
                     </div>
                   </a>
                 </div>
