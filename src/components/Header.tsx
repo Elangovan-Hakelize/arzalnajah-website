@@ -86,9 +86,9 @@ export default function Header() {
 
           {/* Contact CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:+971523149927" className="flex items-center space-x-2 text-[#3d1700] hover:text-[#E56020] transition-colors">
+            <a href="tel:+971568567705" className="flex items-center space-x-2 text-[#3d1700] hover:text-[#E56020] transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="font-semibold">+971 52 314 9927</span>
+              <span className="font-semibold">+971 56 856 7705</span>
             </a>
             <Button 
               onClick={openPopup}
@@ -156,9 +156,9 @@ export default function Header() {
                 Contact
               </Link>
               
-              <a href="tel:+971523149927" className="flex items-center space-x-2 text-[#3d1700] pt-4 border-t">
+              <a href="tel:+971568567705" className="flex items-center space-x-2 text-[#3d1700] pt-4 border-t">
                 <Phone className="w-4 h-4" />
-                <span className="font-semibold">+971 52 314 9927</span>
+                <span className="font-semibold">+971 56 856 7705</span>
               </a>
               
               <Button 
